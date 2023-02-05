@@ -1683,6 +1683,14 @@ pre code {
 .use-motion .collection-header {
   visibility: hidden;
 }
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+}
+.post-body p a:hover {
+  color: #0477ab;
+  text-decoration: underline;
+}
 .posts-collapse .post-content {
   margin-bottom: 35px;
   margin-left: 35px;
@@ -1904,6 +1912,14 @@ pre code {
   position: absolute;
   top: 0;
   width: 100%;
+}
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+}
+.post-body p a:hover {
+  color: #0477ab;
+  text-decoration: underline;
 }
 .post-gallery {
   display: flex;
