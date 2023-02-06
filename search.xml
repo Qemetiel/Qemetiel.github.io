@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>first_post</title>
+    <url>/2023/02/05/first-post/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2023/02/05/hello-world/</url>
     <content><![CDATA[<p>尝试搭了博客…之后可能在上边写一些东西以及传点资源ww</p>
@@ -26,24 +31,10 @@
       </tags>
   </entry>
   <entry>
-    <title>first_post</title>
-    <url>/2023/02/05/first-post/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
-    <title>试着翻译了Levine的量子化学...[附第一章下载链接]</title>
-    <url>/2023/02/06/levin1/</url>
-    <content><![CDATA[<p>test</p>
-<p>  test</p>
-]]></content>
-      <tags>
-        <tag>Levine Quantum Chemistry</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown-Grammar Test</title>
     <url>/2023/02/05/test/</url>
-    <content><![CDATA[<p>仅供本渣测试记录学习使用！别在这理发店！<br>可看<a href="https://www.markdown.xyz/basic-syntax/">指南</a></p>
+    <content><![CDATA[<p>仅供本渣测试记录学习使用！别在这理发店！</p>
+<p>参考资料 <a href="https://www.markdown.xyz/basic-syntax/">指南</a><br><a href="https://www.zybuluo.com/mdeditor">在线编辑markdown</a></p>
 <span id="more"></span>
 <font color=#0099ff size=1>
     完了，发现自己不会缩进
@@ -171,7 +162,9 @@
 <h4 id="3-3-3-超链接"><a href="#3-3-3-超链接" class="headerlink" title="3.3.3 超链接"></a>3.3.3 超链接</h4><p><code>[描述](URL)</code><br>如<code>[voidmio](voidmio.xyz)</code><br><a href="voidmio.xyz">voidmio</a></p>
 <h3 id="3-4-分割线"><a href="#3-4-分割线" class="headerlink" title="3.4 分割线"></a>3.4 分割线</h3><p>三个及以上的星号(*)、减号(-)、底线(_)构成，行内不能有其他，效果都是：</p>
 <hr>
-<h3 id="3-5-代码块"><a href="#3-5-代码块" class="headerlink" title="3.5 代码块"></a>3.5 代码块</h3><p>可用tab缩进；<br>亦可用<a href="#31-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95">3.1</a>中反引号 `code`: <code>code</code></p>
+<h3 id="3-5-代码块"><a href="#3-5-代码块" class="headerlink" title="3.5 代码块"></a>3.5 代码块</h3><p>可用tab缩进；<br>亦可用<a href="#31-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95">3.1</a>中反引号 `code`: <code>code</code><br>代码风格可以调整，如开头写作&#96;&#96;&#96;cpp：</p>
+<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span> </span>&#123;</span><br><span class="line">	cout &lt;&lt; <span class="string">&quot;hello world&quot;</span> &lt;&lt; endl;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 <h3 id="3-6-引用"><a href="#3-6-引用" class="headerlink" title="3.6 引用"></a>3.6 引用</h3><p>在被引用的文本前加上 &gt; 以及一个空格，如：<br>    &gt; test<br>    &gt;<br>    &gt; test<br>效果</p>
 <blockquote>
 <p>test</p>
@@ -217,8 +210,39 @@
 <li><input disabled="" type="checkbox"> 计划任务</li>
 <li><input checked="" disabled="" type="checkbox"> 完成任务</li>
 </ul>
+<h4 id="3-7-4-嵌套列表"><a href="#3-7-4-嵌套列表" class="headerlink" title="3.7.4 嵌套列表"></a>3.7.4 嵌套列表</h4><pre><code>&lt;figure&gt;
+    1 w
+    &lt;br/&gt;
+    2 ww
+    &lt;figure&gt;
+        2.1
+        &lt;br/&gt;
+        2.2
+    &lt;/figure&gt;
+    &lt;figure&gt;
+        &lt;blockquote&gt;可以缩进引用块&lt;/blockquote&gt;
+    &lt;/figure&gt;
+    &lt;blockquote&gt;可以缩进引用块&lt;/blockquote&gt;
+&lt;/figure&gt;
+</code></pre>
+<p>注意需要使用<code>&lt;br/&gt;</code>换行</p>
+<figure>
+    1 w
+    <br/>
+    2 ww
+    <figure>
+        2.1
+        <br/>
+        2.2
+    </figure>
+    <figure>
+        <blockquote>可以缩进引用块</blockquote>
+    </figure>
+    <blockquote>可以缩进引用块</blockquote>
+</figure>
+
 <h3 id="3-8-表格"><a href="#3-8-表格" class="headerlink" title="3.8 表格"></a>3.8 表格</h3><pre><code>A | B  | C | D 
-:-:  | :-: | - | - 
+:-  | :-: | - | -: 
 1  | 2 | 3 | 4
 1  | 2 | 3 | 4
 </code></pre>
@@ -226,23 +250,23 @@
 <table>
 <thead>
 <tr>
-<th align="center">A</th>
+<th align="left">A</th>
 <th align="center">B</th>
 <th>C</th>
-<th>D</th>
+<th align="right">D</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">1</td>
+<td align="left">1</td>
 <td align="center">2</td>
 <td>3</td>
-<td>4</td>
+<td align="right">4</td>
 </tr>
 <tr>
-<td align="center">1</td>
+<td align="left">1</td>
 <td align="center">2</td>
 <td>3</td>
-<td>4</td>
+<td align="right">4</td>
 </tr>
 </tbody></table>
 <h3 id="3-9-字体、字号与颜色"><a href="#3-9-字体、字号与颜色" class="headerlink" title="3.9 字体、字号与颜色"></a>3.9 字体、字号与颜色</h3><pre><code>普通に(x
@@ -258,31 +282,26 @@
 <p>效果：</p>
 <table><tr><td bgcolor=orange>orange</td></tr></table>
 
-<h3 id="3-11-检查列表"><a href="#3-11-检查列表" class="headerlink" title="3.11 检查列表"></a>3.11 检查列表</h3><figure>
-    1 快捷键 （Markdown all in one 组件）
-    2 基本语法
-    <figure>
-        2.1
-        <br/>
-        2° 子条件2
-        <br/>
-        2° 子条件2
-        <br/>
-        2° 子条件2
-        <br/>
-        2° 子条件2
-        <br/>
-        2° 子条件2
-    </figure>
-    <figure>
-        <blockquote>可以缩进引用块</blockquote>
-    </figure>
-    <blockquote>可以缩进引用块</blockquote>
-</figure>
-
+<h3 id="3-11-TeX"><a href="#3-11-TeX" class="headerlink" title="3.11 TeX"></a>3.11 TeX</h3><pre><code>行内$\hat H\psi_i=E_i\psi_i$
+$$
+\bigg[-\dfrac&#123;\hbar^2&#125;&#123;2m&#125;\dfrac&#123;d^2&#125;&#123;dx^2&#125;+V(x)\bigg]\psi_i=E_i\psi_i \tag&#123;test&#125;
+$$
+</code></pre>
+<p>行内$\hat H\psi_i&#x3D;E_i\psi_i$<br>$$<br>\bigg[-\dfrac{\hbar^2}{2m}\dfrac{d^2}{dx^2}+V(x)\bigg]\psi_i&#x3D;E_i\psi_i \tag{test}<br>$$</p>
+<p>昂，没了</p>
 ]]></content>
       <tags>
         <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>试着翻译了Levine的量子化学...[附第一章下载链接]</title>
+    <url>/2023/02/06/levin1/</url>
+    <content><![CDATA[<p>test</p>
+<p>  test</p>
+]]></content>
+      <tags>
+        <tag>Levine Quantum Chemistry</tag>
       </tags>
   </entry>
 </search>
