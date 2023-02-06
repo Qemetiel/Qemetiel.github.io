@@ -6,11 +6,6 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>test</title>
-    <url>/2023/02/05/test/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2023/02/05/hello-world/</url>
     <content><![CDATA[<p>尝试搭了博客…之后可能在上边写一些东西以及传点资源ww</p>
@@ -31,5 +26,10 @@
 
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
+  </entry>
+  <entry>
+    <title>test</title>
+    <url>/2023/02/05/test/</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
