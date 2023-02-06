@@ -31,19 +31,25 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
+    <title>试着翻译了Levine的量子化学...[附第一章下载链接]</title>
+    <url>/2023/02/06/levin1/</url>
+    <content><![CDATA[<p>test</p>
+<p>  test</p>
+]]></content>
+      <tags>
+        <tag>Levine Quantum Chemistry</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Markdown-Grammar Test</title>
     <url>/2023/02/05/test/</url>
-    <content><![CDATA[<p>仅供本渣测试记录学习使用！别在这理发店！<br>参考原文<a href="https://blog.csdn.net/u014061630/article/details/81359144">链接</a></p>
+    <content><![CDATA[<p>仅供本渣测试记录学习使用！别在这理发店！<br>可看<a href="https://www.markdown.xyz/basic-syntax/">指南</a></p>
 <span id="more"></span>
 <font color=#0099ff size=1>
     完了，发现自己不会缩进
     <br/>
 </font>
 
-<ul>
-<li><a href="#1-%E5%BF%AB%E6%8D%B7%E9%94%AE">1 快捷键</a></li>
-<li><a href="#2-%E5%BF%AB%E6%8D%B7%E5%91%BD%E4%BB%A4">2 快捷命令</a></li>
-</ul>
 <h2 id="1-快捷键"><a href="#1-快捷键" class="headerlink" title="1 快捷键"></a>1 快捷键</h2><p>(基于 Markdown All in One)</p>
 <table>
 <thead>
@@ -53,10 +59,6 @@
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">普通に(x</td>
-<td align="center">\</td>
-</tr>
-<tr>
 <td align="center"><strong>加粗</strong></td>
 <td align="center"><kbd>CTRL</kbd> + <kbd>B</kbd></td>
 </tr>
@@ -69,7 +71,7 @@
 <td align="center"><kbd>ALT</kbd> + <kbd>S</kbd></td>
 </tr>
 <tr>
-<td align="center">$ 插入公式 $</td>
+<td align="center">$ 触发数学环境 $</td>
 <td align="center"><kbd>CTRL</kbd> + <kbd>M</kbd></td>
 </tr>
 <tr>
@@ -81,8 +83,182 @@
 <td align="center"><kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd></td>
 </tr>
 </tbody></table>
-<h2 id="2-快捷命令"><a href="#2-快捷命令" class="headerlink" title="2 快捷命令"></a>2 快捷命令</h2><p>(基于 Markdown All in One)<br><font size=3><br>    <br/><br>    <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> 调出命令输入框，输入命令即可<br>    <br/><br></font></p>
-<figure>
+<h2 id="2-快捷命令"><a href="#2-快捷命令" class="headerlink" title="2 快捷命令"></a>2 快捷命令</h2><p>(基于 Markdown All in One)<br><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> 调出命令输入框，输入命令即可</p>
+<table>
+<thead>
+<tr>
+<th align="center">Command</th>
+<th align="center">Key</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">自动生成 Markdown 目录</td>
+<td align="center"><code>Create Table of Contents</code></td>
+</tr>
+<tr>
+<td align="center">更新目录（没啥用）</td>
+<td align="center"><code>Update Table of Contents</code></td>
+</tr>
+<tr>
+<td align="center">添加&#x2F;更新章节序号</td>
+<td align="center"><code>Add/Update section numbers</code></td>
+</tr>
+<tr>
+<td align="center">移除章节序号</td>
+<td align="center"><code>Remove section numbers</code></td>
+</tr>
+<tr>
+<td align="center">`添加code标签`</td>
+<td align="center"><code>Toggle code span</code></td>
+</tr>
+<tr>
+<td align="center">````添加code块````</td>
+<td align="center"><code>Toggle code block</code></td>
+</tr>
+<tr>
+<td align="center">将当前文档打印到HTML</td>
+<td align="center"><code>Print current document to HTML</code></td>
+</tr>
+<tr>
+<td align="center">$ 触发数学环境 $</td>
+<td align="center"><code>Toggle math environment</code></td>
+</tr>
+<tr>
+<td align="center">- 触发列表</td>
+<td align="center"><code>Toggle list</code></td>
+</tr>
+</tbody></table>
+<h2 id="3-基本语法"><a href="#3-基本语法" class="headerlink" title="3 基本语法"></a>3 基本语法</h2><h3 id="3-1-字体"><a href="#3-1-字体" class="headerlink" title="3.1 字体"></a>3.1 字体</h3><table>
+<thead>
+<tr>
+<th align="center">Rendering</th>
+<th align="center">Markdown</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">普通に(x</td>
+<td align="center"><code>普通に(x</code></td>
+</tr>
+<tr>
+<td align="center"><em>斜体</em></td>
+<td align="center"><code>*斜体*</code></td>
+</tr>
+<tr>
+<td align="center"><em>斜体</em></td>
+<td align="center"><code>_斜体_</code></td>
+</tr>
+<tr>
+<td align="center"><strong>加粗</strong></td>
+<td align="center"><code>**加粗**</code></td>
+</tr>
+<tr>
+<td align="center"><em><strong>倾斜加粗</strong></em></td>
+<td align="center"><code>***倾斜加粗***</code></td>
+</tr>
+<tr>
+<td align="center"><del>删除线</del></td>
+<td align="center"><code>~~删除线~~</code></td>
+</tr>
+<tr>
+<td align="center"><code>代码</code></td>
+<td align="center"><code>代码</code></td>
+</tr>
+</tbody></table>
+<h3 id="3-2-分级标题"><a href="#3-2-分级标题" class="headerlink" title="3.2 分级标题"></a>3.2 分级标题</h3><p># 一级标题<br/><br>## 二级标题<br/><br>### 三级标题<br/><br>#### 四级标题<br/><br>##### 五级标题<br/><br>###### 六级标题<br/><br>也可以写：<br>    带分隔线的可以换行的<br>    一级标题<br>    &#x3D;&#x3D;&#x3D;</p>
+<p>或写<br>    可以换行的<br>    二级标题<br>    —</p>
+<h3 id="3-3-链接"><a href="#3-3-链接" class="headerlink" title="3.3 链接"></a>3.3 链接</h3><h4 id="3-3-1-本地图片链接"><a href="#3-3-1-本地图片链接" class="headerlink" title="3.3.1 本地图片链接"></a>3.3.1 本地图片链接</h4><p><code>![描述](相对路径)</code><br>描述可不写</p>
+<h4 id="3-3-2-网络图片链接"><a href="#3-3-2-网络图片链接" class="headerlink" title="3.3.2 网络图片链接"></a>3.3.2 网络图片链接</h4><p><code>![描述](URL)</code><br>描述可不写<br>如  <code>![kawaii](https://s2.loli.net/2023/02/05/nMdVLuT27GER1Zw.jpg)</code><br><img src="https://s2.loli.net/2023/02/05/nMdVLuT27GER1Zw.jpg" alt="kawaii"></p>
+<h4 id="3-3-3-超链接"><a href="#3-3-3-超链接" class="headerlink" title="3.3.3 超链接"></a>3.3.3 超链接</h4><p><code>[描述](URL)</code><br>如<code>[voidmio](voidmio.xyz)</code><br><a href="voidmio.xyz">voidmio</a></p>
+<h3 id="3-4-分割线"><a href="#3-4-分割线" class="headerlink" title="3.4 分割线"></a>3.4 分割线</h3><p>三个及以上的星号(*)、减号(-)、底线(_)构成，行内不能有其他，效果都是：</p>
+<hr>
+<h3 id="3-5-代码块"><a href="#3-5-代码块" class="headerlink" title="3.5 代码块"></a>3.5 代码块</h3><p>可用tab缩进；<br>亦可用<a href="#31-%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95">3.1</a>中反引号 `code`: <code>code</code></p>
+<h3 id="3-6-引用"><a href="#3-6-引用" class="headerlink" title="3.6 引用"></a>3.6 引用</h3><p>在被引用的文本前加上 &gt; 以及一个空格，如：<br>    &gt; test<br>    &gt;<br>    &gt; test<br>效果</p>
+<blockquote>
+<p>test</p>
+<p>test</p>
+</blockquote>
+<p>引用可以嵌套：<br>    &gt; test3<br>    &gt;&gt; test2<br>    &gt;&gt;&gt; test1<br>效果</p>
+<blockquote>
+<p>test3</p>
+<blockquote>
+<p>test2</p>
+<blockquote>
+<p>test1</p>
+</blockquote>
+</blockquote>
+</blockquote>
+<p>引用区块中 Markdown 语法仍生效。</p>
+<h3 id="3-7-列表"><a href="#3-7-列表" class="headerlink" title="3.7 列表"></a>3.7 列表</h3><h4 id="3-7-1-无序列表"><a href="#3-7-1-无序列表" class="headerlink" title="3.7.1 无序列表"></a>3.7.1 无序列表</h4><p>“* “、”+ “、”- “ 均可得到无序列表，如<br>        * test3<br>        + test2<br>        - test1<br>效果</p>
+<ul>
+<li>test3</li>
+</ul>
+<ul>
+<li>test2</li>
+</ul>
+<ul>
+<li>test1</li>
+</ul>
+<h4 id="3-7-2-有序列表"><a href="#3-7-2-有序列表" class="headerlink" title="3.7.2 有序列表"></a>3.7.2 有序列表</h4><pre><code>1. 使用数字
+2. 和一个英文句点
+3. 表示有序列表
+</code></pre>
+<p>效果</p>
+<ol>
+<li>使用数字</li>
+<li>和一个英文句点</li>
+<li>表示有序列表</li>
+</ol>
+<p>列表不光可以单独使用，也可以使用其他的 Markdown 语法，包括标题、引用、代码区块等。</p>
+<h4 id="3-7-3-检查列表"><a href="#3-7-3-检查列表" class="headerlink" title="3.7.3 检查列表"></a>3.7.3 检查列表</h4><pre><code>  - [ ] 计划任务
+  - [x] 完成任务
+</code></pre>
+<p>效果</p>
+<ul>
+<li><input disabled="" type="checkbox"> 计划任务</li>
+<li><input checked="" disabled="" type="checkbox"> 完成任务</li>
+</ul>
+<h3 id="3-8-表格"><a href="#3-8-表格" class="headerlink" title="3.8 表格"></a>3.8 表格</h3><pre><code>A | B  | C | D 
+:-:  | :-: | - | - 
+1  | 2 | 3 | 4
+1  | 2 | 3 | 4
+</code></pre>
+<p>效果</p>
+<table>
+<thead>
+<tr>
+<th align="center">A</th>
+<th align="center">B</th>
+<th>C</th>
+<th>D</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">1</td>
+<td align="center">2</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">2</td>
+<td>3</td>
+<td>4</td>
+</tr>
+</tbody></table>
+<h3 id="3-9-字体、字号与颜色"><a href="#3-9-字体、字号与颜色" class="headerlink" title="3.9 字体、字号与颜色"></a>3.9 字体、字号与颜色</h3><pre><code>普通に(x
+&lt;font face=&quot;黑体&quot;&gt;我是黑体字&lt;/font&gt;
+&lt;font face=&quot;微软雅黑&quot;&gt;我是微软雅黑&lt;/font&gt;
+&lt;font face=&quot;STCAIYUN&quot;&gt;我是华文彩云&lt;/font&gt;
+&lt;font color=#0099ff size=6 face=&quot;黑体&quot;&gt;蓝色黑体&lt;/font&gt;
+&lt;font color=purple size=5&gt;也可以用已知颜色名&lt;/font&gt;
+</code></pre>
+<p>效果：<br>普通に(x<br><font face="黑体">我是黑体字</font><br><font face="微软雅黑">我是微软雅黑</font><br><font face="STCAIYUN">我是华文彩云</font><br><font color=#0099ff size=6 face="黑体">6号蓝色黑体</font><br><font color=purple size=5>也可以用已知颜色名</font></p>
+<h3 id="3-10-背景色"><a href="#3-10-背景色" class="headerlink" title="3.10 背景色"></a>3.10 背景色</h3><pre><code>&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=orange&gt;orange&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</code></pre>
+<p>效果：</p>
+<table><tr><td bgcolor=orange>orange</td></tr></table>
+
+<h3 id="3-11-检查列表"><a href="#3-11-检查列表" class="headerlink" title="3.11 检查列表"></a>3.11 检查列表</h3><figure>
     1 快捷键 （Markdown all in one 组件）
     2 基本语法
     <figure>
@@ -107,16 +283,6 @@
 ]]></content>
       <tags>
         <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>试着翻译了Levine的量子化学...[附第一章下载链接]</title>
-    <url>/2023/02/06/levin1/</url>
-    <content><![CDATA[<p>test</p>
-<p>  test</p>
-]]></content>
-      <tags>
-        <tag>Levine Quantum Chemistry</tag>
       </tags>
   </entry>
 </search>
