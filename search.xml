@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>first_post</title>
-    <url>/2023/02/05/first-post/</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>Hello World</title>
     <url>/2023/02/05/hello-world/</url>
     <content><![CDATA[<p>尝试搭了博客…之后可能在上边写一些东西以及传点资源ww</p>
@@ -31,26 +26,75 @@
       </tags>
   </entry>
   <entry>
+    <title>first_post</title>
+    <url>/2023/02/05/first-post/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title>Markdown-Grammar Test</title>
     <url>/2023/02/05/test/</url>
     <content><![CDATA[<p>仅供本渣测试记录学习使用！别在这理发店！<br>参考原文<a href="https://blog.csdn.net/u014061630/article/details/81359144">链接</a></p>
 <span id="more"></span>
-
-<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><font color=#0099ff size=2>
+<font color=#0099ff size=1>
     完了，发现自己不会缩进
     <br/>
 </font>
 
+<ul>
+<li><a href="#1-%E5%BF%AB%E6%8D%B7%E9%94%AE">1 快捷键</a></li>
+<li><a href="#2-%E5%BF%AB%E6%8D%B7%E5%91%BD%E4%BB%A4">2 快捷命令</a></li>
+</ul>
+<h2 id="1-快捷键"><a href="#1-快捷键" class="headerlink" title="1 快捷键"></a>1 快捷键</h2><p>(基于 Markdown All in One)</p>
+<table>
+<thead>
+<tr>
+<th align="center">Command</th>
+<th align="center">Key</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">普通に(x</td>
+<td align="center">\</td>
+</tr>
+<tr>
+<td align="center"><strong>加粗</strong></td>
+<td align="center"><kbd>CTRL</kbd> + <kbd>B</kbd></td>
+</tr>
+<tr>
+<td align="center"><em>斜体</em></td>
+<td align="center"><kbd>CTRL</kbd> + <kbd>I</kbd></td>
+</tr>
+<tr>
+<td align="center">删除线</td>
+<td align="center"><kbd>ALT</kbd> + <kbd>S</kbd></td>
+</tr>
+<tr>
+<td align="center">$ 插入公式 $</td>
+<td align="center"><kbd>CTRL</kbd> + <kbd>M</kbd></td>
+</tr>
+<tr>
+<td align="center">开启同步预览</td>
+<td align="center"><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>V</kbd></td>
+</tr>
+<tr>
+<td align="center">格式化表格</td>
+<td align="center"><kbd>ALT</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd></td>
+</tr>
+</tbody></table>
+<h2 id="2-快捷命令"><a href="#2-快捷命令" class="headerlink" title="2 快捷命令"></a>2 快捷命令</h2><p>(基于 Markdown All in One)<br><font size=3><br>    <br/><br>    <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>P</kbd> 调出命令输入框，输入命令即可<br>    <br/><br></font></p>
 <figure>
-    ① 条件1
+    1 快捷键 （Markdown all in one 组件）
+    2 基本语法
     <figure>
-        1° 子条件1
+        2.1
         <br/>
         2° 子条件2
-    </figure>
-    ② 条件2
-    <figure>
-        1° 子条件1
+        <br/>
+        2° 子条件2
+        <br/>
+        2° 子条件2
+        <br/>
+        2° 子条件2
         <br/>
         2° 子条件2
     </figure>
@@ -67,7 +111,7 @@
   </entry>
   <entry>
     <title>试着翻译了Levine的量子化学...[附第一章下载链接]</title>
-    <url>/2023/02/06/%E8%AF%95%E7%9D%80%E7%BF%BB%E8%AF%91%E4%BA%86Levine%E7%9A%84%E9%87%8F%E5%AD%90%E5%8C%96%E5%AD%A6-%E9%99%84%E7%AC%AC%E4%B8%80%E7%AB%A0%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5/</url>
+    <url>/2023/02/06/levin1/</url>
     <content><![CDATA[<p>test</p>
 <p>  test</p>
 ]]></content>
