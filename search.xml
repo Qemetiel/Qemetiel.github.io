@@ -6,41 +6,6 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/02/05/hello-world/</url>
-    <content><![CDATA[<p>尝试搭了博客…之后可能在上边写一些东西以及传点资源ww</p>
-<p>之后是Hexo的宣传广告(x</p>
-<span id="more"></span>
-
-<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-]]></content>
-      <tags>
-        <tag>test</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>试着翻译了Levine的量子化学...[附第一章下载链接]</title>
-    <url>/2023/02/07/levin1/</url>
-    <content><![CDATA[<p>test</p>
-<p>  test</p>
-]]></content>
-      <tags>
-        <tag>Levine Quantum Chemistry</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>决定试着翻译Levine的量子化学</title>
     <url>/2023/02/06/levin0/</url>
     <content><![CDATA[<p>如果有人问起“量子化学如何入门”，<del>那么除了推给他<a href="http://bbs.keinsci.com/thread-4447-1-1.html">卢老师的博文</a>外，</del>大部分人一定会首先推荐他去看 Ira N. Levine 教授的 <a href="https://voidmio.xyz/resources/levine-quantum-chemistry.pdf">Quantum Chemistry</a>。此书概念与数学推导兼备，写得系统且条理，公式推导及措辞均很易懂（可以说比很多结构化学书都要清晰）。如同书中所言：</p>
@@ -76,6 +41,8 @@
 <p>但如果出中译版，一定得是内行且负责的人翻译，否则照样是误导初学者</p>
 </blockquote>
 <p>本人很难称得上专业，最多只占一负责。但不够专业的人再“负责”也只是架谎凿空罢了，无法改变我是文学水平低下，对量化几乎没有属于自己的见解，甚至连全书都没有好好看完的半吊子。鉴于此，第五章及之后的翻译文本的大部将参考吕海港教授的部分翻译版本来处理<del>（前四章有时间再回去校对x懒透了）（也别问为什么是前四章）</del>，本人尽可能只进行进一步的美化、充实。我会尽力产出一部排版雅致，文笔酣畅的作品。当然，在今后一切有可能的宣传中，我都会注明这一点。</p>
+<hr>
+<p>之后可能到三月才会更新，天煞期末考试呜呜呜</p>
 ]]></content>
       <categories>
         <category>Levine Quantum Chemistry 翻译系列</category>
@@ -83,6 +50,41 @@
       <tags>
         <tag>Quantum Chemistry</tag>
         <tag>Levine</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hello World</title>
+    <url>/2023/02/05/hello-world/</url>
+    <content><![CDATA[<p>尝试搭了博客…之后可能在上边写一些东西以及传点资源ww</p>
+<p>之后是Hexo的宣传广告(x</p>
+<span id="more"></span>
+
+<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <tags>
+        <tag>test</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>试着翻译了Levine的量子化学...[附第一章下载链接]</title>
+    <url>/2023/02/07/levin1/</url>
+    <content><![CDATA[<p>test</p>
+<p>  test</p>
+]]></content>
+      <tags>
+        <tag>Levine Quantum Chemistry</tag>
       </tags>
   </entry>
 </search>
