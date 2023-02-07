@@ -275,6 +275,10 @@ $$
 <span id="more"></span>
 
 <p>02.07.2023 基于Waline配置了评论功能，没有备案用了国际版，所以想评论貌似只能翻出去。。。</p>
+<p>02.07.2023 下午 修改了坏掉的vercel地址，应该不需要翻了www 记录一下过程：</p>
+<blockquote>
+<p>域名解析设置，添加CNMAE类型，主机名称 comment，记录值 cname.vercel-dns.com，得到二级域名comment.voidmio.xyz；<br>去 vercel - project - setting - Domains - edit，将waline地址指向这个子域名；<br>更改主体配置文件中 Waline 服务端地址 serverURL 为 comment.voidmio.xyz，结束。</p>
+</blockquote>
 ]]></content>
       <tags>
         <tag>test</tag>
