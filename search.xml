@@ -123,7 +123,8 @@
 <td align="center"><code>代码</code></td>
 </tr>
 </tbody></table>
-<h3 id="3-2-分级标题"><a href="#3-2-分级标题" class="headerlink" title="3.2 分级标题"></a>3.2 分级标题</h3><p># 一级标题<br/><br>## 二级标题<br/><br>### 三级标题<br/><br>#### 四级标题<br/><br>##### 五级标题<br/><br>###### 六级标题<br/><br>也可以写：<br>    带分隔线的可以换行的<br>    一级标题<br>    &#x3D;&#x3D;&#x3D;</p>
+<h3 id="3-2-分级标题"><a href="#3-2-分级标题" class="headerlink" title="3.2 分级标题"></a>3.2 分级标题</h3><p># 一级标题<br>## 二级标题<br>### 三级标题<br>#### 四级标题<br>##### 五级标题<br>###### 六级标题</p>
+<p>也可以写：<br>    带分隔线的可以换行的<br>    一级标题<br>    &#x3D;&#x3D;&#x3D;</p>
 <p>或写<br>    可以换行的<br>    二级标题<br>    —</p>
 <h3 id="3-3-链接"><a href="#3-3-链接" class="headerlink" title="3.3 链接"></a>3.3 链接</h3><h4 id="3-3-1-本地图片链接"><a href="#3-3-1-本地图片链接" class="headerlink" title="3.3.1 本地图片链接"></a>3.3.1 本地图片链接</h4><p><code>![描述](相对路径)</code><br>描述可不写</p>
 <h4 id="3-3-2-网络图片链接"><a href="#3-3-2-网络图片链接" class="headerlink" title="3.3.2 网络图片链接"></a>3.3.2 网络图片链接</h4><p><code>![描述](URL)</code><br>描述可不写<br>如  <code>![kawaii](https://s2.loli.net/2023/02/05/nMdVLuT27GER1Zw.jpg)</code><br><img src="https://s2.loli.net/2023/02/05/nMdVLuT27GER1Zw.jpg" alt="kawaii"></p>
@@ -256,7 +257,7 @@ $$
 $$
 </code></pre>
 <p>行内$\hat H\psi_i&#x3D;E_i\psi_i$<br>$$<br>\bigg[-\dfrac{\hbar^2}{2m}\dfrac{d^2}{dx^2}+V(x)\bigg]\psi_i&#x3D;E_i\psi_i \tag{test}<br>$$</p>
-<p>昂，没了</p>
+<p>昂，没了()</p>
 ]]></content>
       <categories>
         <category>Markdown</category>
@@ -270,22 +271,10 @@ $$
     <title>Hello World</title>
     <url>/2023/02/05/hello-world/</url>
     <content><![CDATA[<p>尝试搭了博客…之后可能在上边写一些东西以及传点资源ww</p>
-<p>之后是Hexo的宣传广告(x</p>
+<p>以下是更新日志和一些注意事项…</p>
 <span id="more"></span>
 
-<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>02.07.2023 基于Waline配置了评论功能，没有备案用了国际版，所以想评论貌似只能翻出去。。。</p>
 ]]></content>
       <tags>
         <tag>test</tag>

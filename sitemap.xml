@@ -2,6 +2,33 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://voidmio.xyz/2023/02/05/hello-world/</loc>
+    
+    <lastmod>2023-02-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://voidmio.xyz/2023/02/05/first-post/</loc>
+    
+    <lastmod>2023-02-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://voidmio.xyz/about/index.html</loc>
+    
+    <lastmod>2023-02-07</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://voidmio.xyz/2023/02/07/levin1/</loc>
     
     <lastmod>2023-02-07</lastmod>
@@ -12,15 +39,6 @@
   
   <url>
     <loc>http://voidmio.xyz/2023/02/06/levin0/</loc>
-    
-    <lastmod>2023-02-07</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://voidmio.xyz/2023/02/05/first-post/</loc>
     
     <lastmod>2023-02-07</lastmod>
     
@@ -50,24 +68,6 @@
     <loc>http://voidmio.xyz/photos/index.html</loc>
     
     <lastmod>2023-02-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://voidmio.xyz/2023/02/05/hello-world/</loc>
-    
-    <lastmod>2023-02-06</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://voidmio.xyz/about/index.html</loc>
-    
-    <lastmod>2023-02-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
