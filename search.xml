@@ -299,7 +299,7 @@ $$
 <h2 id="footer"><a href="#footer" class="headerlink" title="footer"></a>footer</h2><p>页面最下方内容<br>其中没有提及的可在 themes&#x2F;hexo-theme-next-8.11.0&#x2F;layout&#x2F;_partials&#x2F;footer.njk 直接写入</p>
 <h2 id="主页"><a href="#主页" class="headerlink" title="主页"></a>主页</h2><p><code>excerpt_description: true</code> 启用 description<br><code>read_more_btn: true</code> 启用 Read more button</p>
 <h2 id="Donate-Sponsor-settings"><a href="#Donate-Sponsor-settings" class="headerlink" title="Donate (Sponsor) settings"></a>Donate (Sponsor) settings</h2><p>打赏功能，可放二维码，加入动画等</p>
-<h2 id="小功能"><a href="#小功能" class="headerlink" title="小功能"></a>小功能</h2><p>back2top：回到顶部和滚动百分比设置<br>Reading progress bar：阅读进度条<br>Bookmark Support：书签<br>github_banner：右上的github猫<br>pace：加载条，Progress bar in the top during page loading.</p>
+<h2 id="小功能"><a href="#小功能" class="headerlink" title="小功能"></a>小功能</h2><p>back2top：回到顶部和滚动百分比设置<br>Reading progress bar：阅读进度条<br>Bookmark Support：书签<br>github_banner：右上的github猫<br>pace：加载条，Progress bar in the top during page loading.<br>Read more button：阅读全文按钮</p>
 <h2 id="字体font"><a href="#字体font" class="headerlink" title="字体font"></a>字体font</h2><p>分别是<br>侧栏字体 Global font settings used for all elements inside body.<br>大标题字体 Font settings for site title (.site-title).<br>小标题字体 Font settings for headlines (h1 to h6).<br>正文字体 Font settings for posts (.post-body).<br>代码框字体 Font settings for code and code blocks.</p>
 <h2 id="动画-Animation-Settings"><a href="#动画-Animation-Settings" class="headerlink" title="动画 Animation Settings"></a>动画 Animation Settings</h2><p>从<a href="https://theme-next.js.org/animate/">这里</a>得到动作名称。<br>分别是<br>post_block: 整块文章<br>post_header:<br>post_body:<br>coll_header:<br>sidebar: 整个头像侧栏</p>
 ]]></content>
