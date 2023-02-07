@@ -3,7 +3,7 @@
   <entry>
     <title>firstPost_Markdown-Grammar Test</title>
     <url>/2023/02/05/first-post/</url>
-    <content><![CDATA[<p>参考资料 <a href="https://www.markdown.xyz/basic-syntax/">指南</a><br><a href="https://www.zybuluo.com/mdeditor">在线编辑markdown</a></p>
+    <content><![CDATA[<h1 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h1><p>参考资料 <a href="https://www.markdown.xyz/basic-syntax/">指南</a><br><a href="https://www.zybuluo.com/mdeditor">在线编辑markdown</a></p>
 <font color=#0099ff size=1>
     完了，发现自己不会缩进
     <br/>
@@ -120,7 +120,7 @@
 </tr>
 <tr>
 <td align="center"><code>代码</code></td>
-<td align="center"><code>代码</code></td>
+<td align="center">`代码`</td>
 </tr>
 </tbody></table>
 <h3 id="3-2-分级标题"><a href="#3-2-分级标题" class="headerlink" title="3.2 分级标题"></a>3.2 分级标题</h3><p># 一级标题<br>## 二级标题<br>### 三级标题<br>#### 四级标题<br>##### 五级标题<br>###### 六级标题</p>
@@ -257,21 +257,27 @@ $$
 $$
 </code></pre>
 <p>行内$\hat H\psi_i&#x3D;E_i\psi_i$<br>$$<br>\bigg[-\dfrac{\hbar^2}{2m}\dfrac{d^2}{dx^2}+V(x)\bigg]\psi_i&#x3D;E_i\psi_i \tag{test}<br>$$</p>
+<h1 id="NexT，目前为止用到的设置"><a href="#NexT，目前为止用到的设置" class="headerlink" title="NexT，目前为止用到的设置"></a>NexT，目前为止用到的设置</h1><h2 id="Site-Information-Settings"><a href="#Site-Information-Settings" class="headerlink" title="Site Information Settings"></a>Site Information Settings</h2><h3 id="favicon"><a href="#favicon" class="headerlink" title="favicon"></a>favicon</h3><p>更改图标，源自主题包下 source，如 &#x2F;images&#x2F;miosml.png 即 source&#x2F;images&#x2F;miosml.png</p>
+<h3 id="creative-commons"><a href="#creative-commons" class="headerlink" title="creative_commons"></a>creative_commons</h3><p>版权声明。</p>
+<h2 id="Menu-Settings"><a href="#Menu-Settings" class="headerlink" title="Menu Settings"></a>Menu Settings</h2><h3 id="menu"><a href="#menu" class="headerlink" title="menu"></a>menu</h3><p>侧栏目录内容，可追加，格式 name1: &#x2F;name2&#x2F; || fa fa-icon_name<br>其中 name1 为显示名，途径 translation，可在主题包下 languages 中需要的词包中添加 name1 的翻译；<br>其中 &#x2F;name2&#x2F; 为调用的 page 文件夹名，完整路径是 Hexo 根目录&#x2F;name2&#x2F;，届时显示其下 index.md 内容；<br>其中 fa fa-icon_name 为调用的图标，取自<a href="https://fontawesome.com/">fontawesome</a>，但好像一日之内上不去了；</p>
+<h3 id="sidebar"><a href="#sidebar" class="headerlink" title="sidebar"></a>sidebar</h3><p>侧边栏左右位置、隐藏等等</p>
+<h3 id="Avatar"><a href="#Avatar" class="headerlink" title="Avatar"></a>Avatar</h3><p>头像</p>
 <p>昂，没了()</p>
 ]]></content>
       <categories>
-        <category>Markdown</category>
+        <category>Markdown,NexT</category>
       </categories>
       <tags>
         <tag>test</tag>
         <tag>Markdown</tag>
+        <tag>NexT</tag>
       </tags>
   </entry>
   <entry>
     <title>Hello World</title>
     <url>/2023/02/05/hello-world/</url>
-    <content><![CDATA[<p>尝试搭了博客…之后可能在上边写一些东西以及传点资源ww</p>
-<p>以下是更新日志和一些注意事项…</p>
+    <content><![CDATA[<p>尝试搭了博客…之后可能在上边写一些东西以及传点资源ww bar</p>
+<p>里边是更新日志x</p>
 <span id="more"></span>
 
 <p>02.07.2023 基于Waline配置了评论功能，没有备案用了国际版，所以想评论貌似只能翻出去。。。</p>
@@ -279,6 +285,7 @@ $$
 <blockquote>
 <p>域名解析设置，添加CNMAE类型，主机名称 comment，记录值 cname.vercel-dns.com，得到二级域名comment.voidmio.xyz；<br>去 vercel - project - setting - Domains - edit，将waline地址指向这个子域名；<br>更改主体配置文件中 Waline 服务端地址 serverURL 为 comment.voidmio.xyz，结束。</p>
 </blockquote>
+<p>02.07.2023 下午 意识到 NexT 简洁但不够二，之后有时间移植个 ButterFly 吧（）记录一下文章先<br><a href="https://www.shuzhiduo.com/A/lk5a1YBo51/">Hexo博客美化之butterfly主题魔改</a><br><a href="https://blog.csdn.net/weixin_44019426/article/details/122879903">Hexo 博客 Butterfly 主题美化小技巧</a><br><a href="https://blog.51cto.com/haiyongblog/5929199">Butterfly 主题美化</a><br><a href="https://www.imql.life/2020/09/26/My_homepage_with_Butterfly/#%E6%90%AD%E5%BB%BA">Butterfly 主题的博客我决定作为自己的主页</a><br><a href="https://www.imql.life/link/">啥都有</a><br><a href=""></a><br>NexT 也可以再加点东西，如<a href="https://blog.imql.life/2020/01/24/My_HexoBlog_with_NexT(2)/">我的博客的诞生</a></p>
 ]]></content>
       <tags>
         <tag>test</tag>
