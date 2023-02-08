@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://voidmio.xyz/resources/index.html</loc>
+    <loc>http://voidmio.xyz/data/index.html</loc>
     
     <lastmod>2023-02-08</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>http://voidmio.xyz/data/index.html</loc>
+    <loc>http://voidmio.xyz/resources/index.html</loc>
     
     <lastmod>2023-02-08</lastmod>
     
@@ -170,7 +170,7 @@
   </url>
   
   <url>
-    <loc>http://voidmio.xyz/categories/data/</loc>
+    <loc>http://voidmio.xyz/categories/Chemistry/</loc>
     <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -184,14 +184,14 @@
   </url>
   
   <url>
-    <loc>http://voidmio.xyz/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/NexT/</loc>
+    <loc>http://voidmio.xyz/categories/data/</loc>
     <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://voidmio.xyz/categories/Chemistry/</loc>
+    <loc>http://voidmio.xyz/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/NexT/</loc>
     <lastmod>2023-02-08</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
