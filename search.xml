@@ -284,37 +284,6 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>NexT Checkpoint</title>
-    <url>/2023/02/05/hexo/</url>
-    <content><![CDATA[<h1 id="NexT"><a href="#NexT" class="headerlink" title="NexT"></a>NexT</h1><p>目前为止用到的改动</p>
-<h2 id="Site-Information-Settings"><a href="#Site-Information-Settings" class="headerlink" title="Site Information Settings"></a>Site Information Settings</h2><h3 id="favicon"><a href="#favicon" class="headerlink" title="favicon"></a>favicon</h3><p>更改图标，源自主题包下 source，如 &#x2F;images&#x2F;miosml.png 即 source&#x2F;images&#x2F;miosml.png</p>
-<h3 id="creative-commons"><a href="#creative-commons" class="headerlink" title="creative_commons"></a>creative_commons</h3><p>版权声明。</p>
-<h2 id="Menu-Settings"><a href="#Menu-Settings" class="headerlink" title="Menu Settings"></a>Menu Settings</h2><h3 id="menu"><a href="#menu" class="headerlink" title="menu"></a>menu</h3><p>侧栏目录内容，可追加，格式 name1: &#x2F;name2&#x2F; || fa fa-icon_name<br>其中 name1 为显示名，途径 translation，可在主题包下 languages 中需要的词包中添加 name1 的翻译；<br>其中 &#x2F;name2&#x2F; 为调用的 page 文件夹名，完整路径是 Hexo 根目录&#x2F;name2&#x2F;，届时显示其下 index.md 内容；<br>其中 fa fa-icon_name 为调用的图标，取自<a href="https://fontawesome.com/">fontawesome</a>，但好像一日之内上不去了；</p>
-<h3 id="sidebar"><a href="#sidebar" class="headerlink" title="sidebar"></a>sidebar</h3><p>侧边栏左右位置、隐藏等等</p>
-<h3 id="Avatar"><a href="#Avatar" class="headerlink" title="Avatar"></a>Avatar</h3><p>头像</p>
-<h4 id="rotated"><a href="#rotated" class="headerlink" title="rotated"></a>rotated</h4><p>转圈动画</p>
-<h3 id="social"><a href="#social" class="headerlink" title="social"></a>social</h3><p>添加媒体账号</p>
-<h3 id="Blog-rolls"><a href="#Blog-rolls" class="headerlink" title="Blog rolls"></a>Blog rolls</h3><p>添加其他网址，title 是 title</p>
-<h3 id="Table-of-Contents-in-the-Sidebar"><a href="#Table-of-Contents-in-the-Sidebar" class="headerlink" title="Table of Contents in the Sidebar"></a>Table of Contents in the Sidebar</h3><p>侧栏文章目录设置</p>
-<h2 id="footer"><a href="#footer" class="headerlink" title="footer"></a>footer</h2><p>页面最下方内容<br>其中没有提及的可在 themes&#x2F;hexo-theme-next-8.11.0&#x2F;layout&#x2F;_partials&#x2F;footer.njk 直接写入</p>
-<h2 id="主页"><a href="#主页" class="headerlink" title="主页"></a>主页</h2><p><code>excerpt_description: true</code> 启用 description<br><code>read_more_btn: true</code> 启用 Read more button</p>
-<h2 id="Donate-Sponsor-settings"><a href="#Donate-Sponsor-settings" class="headerlink" title="Donate (Sponsor) settings"></a>Donate (Sponsor) settings</h2><p>打赏功能，可放二维码，加入动画等</p>
-<h2 id="小功能"><a href="#小功能" class="headerlink" title="小功能"></a>小功能</h2><p>back2top：回到顶部和滚动百分比设置<br>Reading progress bar：阅读进度条<br>Bookmark Support：书签<br>github_banner：右上的github猫<br>pace：加载条，Progress bar in the top during page loading.<br>Read more button：阅读全文按钮</p>
-<h2 id="字体font"><a href="#字体font" class="headerlink" title="字体font"></a>字体font</h2><p>分别是<br>侧栏字体 Global font settings used for all elements inside body.<br>大标题字体 Font settings for site title (.site-title).<br>小标题字体 Font settings for headlines (h1 to h6).<br>正文字体 Font settings for posts (.post-body).<br>代码框字体 Font settings for code and code blocks.</p>
-<h2 id="动画-Animation-Settings"><a href="#动画-Animation-Settings" class="headerlink" title="动画 Animation Settings"></a>动画 Animation Settings</h2><p>从<a href="https://theme-next.js.org/animate/">这里</a>得到动作名称。<br>分别是<br>post_block: 整块文章<br>post_header:<br>post_body:<br>coll_header:<br>sidebar: 整个头像侧栏</p>
-<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>基本源于<a href="https://wolfdan.cn/next7%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%EF%BC%8C%E5%B9%B6%E8%AE%BE%E7%BD%AE%E9%A1%B5%E9%9D%A2%E9%80%8F%E6%98%8E%E5%BA%A6/">这位佬的博文</a></p>
-]]></content>
-      <categories>
-        <category>前端技术</category>
-        <category>NexT</category>
-      </categories>
-      <tags>
-        <tag>data</tag>
-        <tag>NexT</tag>
-        <tag>Study</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>翻译了Levine的量子化学...[附第一章下载链接]</title>
     <url>/2023/02/07/levin1/</url>
     <content><![CDATA[<p>~~第一章其实在一月二十多号就翻译完了。。但当时还没有这个博客，图一乐~ ~~</p>
@@ -388,6 +357,40 @@ $$
       <tags>
         <tag>Quantum Chemistry</tag>
         <tag>Levine</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>NexT Checkpoint</title>
+    <url>/2023/02/05/hexo/</url>
+    <content><![CDATA[<h1 id="NexT"><a href="#NexT" class="headerlink" title="NexT"></a>NexT</h1><p>目前为止用到的改动</p>
+<h2 id="Site-Information-Settings"><a href="#Site-Information-Settings" class="headerlink" title="Site Information Settings"></a>Site Information Settings</h2><h3 id="favicon"><a href="#favicon" class="headerlink" title="favicon"></a>favicon</h3><p>更改图标，源自主题包下 source，如 &#x2F;images&#x2F;miosml.png 即 source&#x2F;images&#x2F;miosml.png</p>
+<h3 id="creative-commons"><a href="#creative-commons" class="headerlink" title="creative_commons"></a>creative_commons</h3><p>版权声明。</p>
+<h2 id="Menu-Settings"><a href="#Menu-Settings" class="headerlink" title="Menu Settings"></a>Menu Settings</h2><h3 id="menu"><a href="#menu" class="headerlink" title="menu"></a>menu</h3><p>侧栏目录内容，可追加，格式 name1: &#x2F;name2&#x2F; || fa fa-icon_name<br>其中 name1 为显示名，途径 translation，可在主题包下 languages 中需要的词包中添加 name1 的翻译；<br>其中 &#x2F;name2&#x2F; 为调用的 page 文件夹名，完整路径是 Hexo 根目录&#x2F;name2&#x2F;，届时显示其下 index.md 内容；<br>其中 fa fa-icon_name 为调用的图标，取自<a href="https://fontawesome.com/">fontawesome</a>，但好像一日之内上不去了；</p>
+<h3 id="sidebar"><a href="#sidebar" class="headerlink" title="sidebar"></a>sidebar</h3><p>侧边栏左右位置、隐藏等等</p>
+<h3 id="Avatar"><a href="#Avatar" class="headerlink" title="Avatar"></a>Avatar</h3><p>头像</p>
+<h4 id="rotated"><a href="#rotated" class="headerlink" title="rotated"></a>rotated</h4><p>转圈动画</p>
+<h3 id="social"><a href="#social" class="headerlink" title="social"></a>social</h3><p>添加媒体账号</p>
+<h3 id="Blog-rolls"><a href="#Blog-rolls" class="headerlink" title="Blog rolls"></a>Blog rolls</h3><p>添加其他网址，title 是 title</p>
+<h3 id="Table-of-Contents-in-the-Sidebar"><a href="#Table-of-Contents-in-the-Sidebar" class="headerlink" title="Table of Contents in the Sidebar"></a>Table of Contents in the Sidebar</h3><p>侧栏文章目录设置</p>
+<h2 id="footer"><a href="#footer" class="headerlink" title="footer"></a>footer</h2><p>页面最下方内容<br>其中没有提及的可在 themes&#x2F;hexo-theme-next-8.11.0&#x2F;layout&#x2F;_partials&#x2F;footer.njk 直接写入</p>
+<h2 id="主页"><a href="#主页" class="headerlink" title="主页"></a>主页</h2><p><code>excerpt_description: true</code> 启用 description<br><code>read_more_btn: true</code> 启用 Read more button</p>
+<h2 id="Donate-Sponsor-settings"><a href="#Donate-Sponsor-settings" class="headerlink" title="Donate (Sponsor) settings"></a>Donate (Sponsor) settings</h2><p>打赏功能，可放二维码，加入动画等</p>
+<h2 id="小功能"><a href="#小功能" class="headerlink" title="小功能"></a>小功能</h2><p>back2top：回到顶部和滚动百分比设置<br>Reading progress bar：阅读进度条<br>Bookmark Support：书签<br>github_banner：右上的github猫<br>pace：加载条，Progress bar in the top during page loading.<br>Read more button：阅读全文按钮</p>
+<h2 id="字体font"><a href="#字体font" class="headerlink" title="字体font"></a>字体font</h2><p>分别是<br>侧栏字体 Global font settings used for all elements inside body.<br>大标题字体 Font settings for site title (.site-title).<br>小标题字体 Font settings for headlines (h1 to h6).<br>正文字体 Font settings for posts (.post-body).<br>代码框字体 Font settings for code and code blocks.</p>
+<h2 id="动画-Animation-Settings"><a href="#动画-Animation-Settings" class="headerlink" title="动画 Animation Settings"></a>动画 Animation Settings</h2><p>从<a href="https://theme-next.js.org/animate/">这里</a>得到动作名称。<br>分别是<br>post_block: 整块文章<br>post_header:<br>post_body:<br>coll_header:<br>sidebar: 整个头像侧栏</p>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>基本源于<a href="https://wolfdan.cn/next7%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%EF%BC%8C%E5%B9%B6%E8%AE%BE%E7%BD%AE%E9%A1%B5%E9%9D%A2%E9%80%8F%E6%98%8E%E5%BA%A6/">这位佬的博文</a><br>总之就是<br>在 custom_file_path 下新引出一条 <code>style: source/_custom/custom.styl</code> （叫别的也行，用原来注释掉的 style 路径也行，但都需要新建）<br>去 blog 根目录下 source&#x2F; 新建 &#x2F;_custom&#x2F;custom.styl<br>加入以下：</p>
+<figure class="highlight stylus"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 设置背景图片</span></span><br><span class="line"><span class="selector-tag">body</span> &#123;</span><br><span class="line">  <span class="comment">// 使用URL，固定和随机 API 都行，但注意别被拉伸成笨蛋</span></span><br><span class="line">  <span class="comment">// background:url(https://source.unsplash.com/random/1600x900); </span></span><br><span class="line">  <span class="comment">// background:url(https://image.anosu.top/pixiv/direct?r18=0); </span></span><br><span class="line">  <span class="attribute">background-image</span>:<span class="built_in">url</span>(/images/back.jpg); <span class="comment">//这一行的括号里填背景图片的路径，将图片放在\themes\next\source\images下</span></span><br><span class="line">  <span class="attribute">background-repeat</span>: no-repeat; <span class="comment">// 不重复</span></span><br><span class="line">  <span class="attribute">background-attachment</span>:fixed; <span class="comment">// 不随鼠标滚动</span></span><br><span class="line">  <span class="attribute">background-position</span>:<span class="number">50%</span> <span class="number">50%</span>; <span class="comment">// 居中</span></span><br><span class="line">  <span class="attribute">background-size</span>: cover;      <span class="comment">// 填充</span></span><br><span class="line">  <span class="comment">//background-size:100% 100%; // 会强制拉伸，很哈人</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 各板块设置透明度</span></span><br><span class="line"><span class="comment">// 主板块</span></span><br><span class="line"><span class="selector-class">.main-inner</span> &#123;</span><br><span class="line">    <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">254</span>, <span class="number">250</span>, <span class="number">254</span>, <span class="number">0.9</span>);  <span class="comment">// 文字和左右框线的间距</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 主版块里的post板块(f12,cmd+shift+c找出)</span></span><br><span class="line"><span class="selector-class">.post-block</span> &#123;</span><br><span class="line">    <span class="attribute">margin-top</span>: <span class="number">10px</span>; <span class="comment">// 文章框和顶部空隙</span></span><br><span class="line">   <span class="attribute">margin-bottom</span>: <span class="number">10px</span>; <span class="comment">// 文章框间距</span></span><br><span class="line">   <span class="attribute">padding</span>: <span class="number">20px</span>; <span class="comment">// 文字和左右框线的间距</span></span><br><span class="line">   -webkit-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">9px</span> <span class="built_in">rgba</span>(<span class="number">102</span>, <span class="number">77</span>, <span class="number">51</span>, <span class="number">1</span>); <span class="comment">// 博文边上的的框框</span></span><br><span class="line">   -moz-<span class="attribute">box-shadow</span>: <span class="number">0</span> <span class="number">0</span> <span class="number">9px</span> <span class="built_in">rgba</span>(<span class="number">255</span>, <span class="number">220</span>, <span class="number">255</span>, <span class="number">0.8</span>); <span class="comment">// 这我也不知道干嘛的，好像没用</span></span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">1</span>; <span class="comment">// 最好别降这个透明度，因为包括文字和图</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 侧边框的透明度设置</span></span><br><span class="line"><span class="selector-class">.sidebar</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.85</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 菜单栏的透明度设置</span></span><br><span class="line"><span class="selector-class">.header-inner</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>: <span class="built_in">rgba</span>(<span class="number">245</span>, <span class="number">238</span>, <span class="number">255</span>, <span class="number">0.85</span>);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 页码</span></span><br><span class="line"><span class="selector-class">.pagination</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.95</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 搜索框（local-search）的透明度设置</span></span><br><span class="line"><span class="selector-class">.popup</span> &#123;</span><br><span class="line">  <span class="attribute">opacity</span>: <span class="number">0.85</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>完毕</p>
+<h2 id="备案号"><a href="#备案号" class="headerlink" title="备案号"></a>备案号</h2><p>在 beian 下。<br>备案标放到主题根目录下 source&#x2F;image 即可。</p>
+]]></content>
+      <categories>
+        <category>前端技术</category>
+        <category>NexT</category>
+      </categories>
+      <tags>
+        <tag>data</tag>
+        <tag>NexT</tag>
+        <tag>Study</tag>
       </tags>
   </entry>
 </search>
