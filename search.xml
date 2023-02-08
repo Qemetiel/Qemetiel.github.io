@@ -269,6 +269,42 @@ $$
       </tags>
   </entry>
   <entry>
+    <title>决定试着翻译Levine的量子化学</title>
+    <url>/2023/02/06/levin0/</url>
+    <content><![CDATA[<p>如果有人问起“量子化学如何入门”，<del>那么除了推给他<a href="http://bbs.keinsci.com/thread-4447-1-1.html">卢老师的博文</a>外，</del>大部分人一定会首先推荐他去看 Ira N. Levine 教授的 <a href="https://voidmio.xyz/resources/levine-quantum-chemistry.pdf">Quantum Chemistry</a>。此书概念与数学推导兼备，写得系统且条理，公式推导及措辞均很易懂（可以说比很多结构化学书都要清晰）。如同书中所言：</p>
+<blockquote>
+<p>Derivations are given with enough detail to make them easy to follow, and wherever possible I avoid resorting to the frustrating phrase “it can be shown that.” The aim is to give students a solid understanding of the physical and mathematical aspects of quantum mechanics and molecular electronic structure.</p>
+</blockquote>
+<p>对于公式推导内容，Levine没有把所有的公式、结论都放在一个介绍性的章节或附录中，而是将数学与物理和化学结合起来。</p>
+<blockquote>
+<p>Immediate application of the mathematics to solving a quantum-mechanical problem will make the mathematics more meaningful to students than would separate study of the mathematics.</p>
+</blockquote>
+<p>Levine 的量子化学无疑是极优秀的，但最大的问题还是出在语言上。Sobereva 曾说过：</p>
+<blockquote>
+<p>Levine这书的最新版很适合出个中译版，免得很多初学者，特别是本科生，因为惧怕英文，去读市面上烂七八糟的中文书而白费大量时间。</p>
+</blockquote>
+<p>对于初出茅庐的、可能仅仅是出于兴趣学习量子化学的学生们，提到英语原版书多半心生怖惧，<del>虽然习惯后看原文比看翻译版更顺畅，</del>而更倾向于看一些差强人意的中文书籍，错过这本优秀的教材。所以于壬寅年末，我决定尝试翻译本书，可供后来者参照阅读。</p>
+<p>我选取的是最新的第七版，也是最后一版。原书及所有翻译产出均可在我的主页中<a href="https://voidmio.xyz/resources/">资源</a>处下载。</p>
+<p>02&#x2F;07&#x2F;2023 注<br>敲这篇文章时，距离我翻译完第一章已经有些时日了。其实翻译最初的目的只是做供我自己看的、日后复盘的资料，所以靠前的部分可能并不完善，只可意会（）</p>
+<p>古代在谈及本书，Sob 还说过：</p>
+<blockquote>
+<p>但如果出中译版，一定得是内行且负责的人翻译，否则照样是误导初学者</p>
+</blockquote>
+<p>本人很难称得上专业，最多只占一负责。但不够专业的人再“负责”也只是架谎凿空罢了，无法改变我是文学水平低下，对量化几乎没有属于自己的见解，甚至连全书都没有好好看完的半吊子。鉴于此，第五章及之后的翻译文本的大部将参考吕海港教授的部分翻译版本来处理<del>（前四章有时间再回去校对x懒透了）（也别问为什么是前四章）</del>，本人尽可能只进行进一步的美化、充实。我会尽力产出一部排版雅致，文笔酣畅的作品。当然，在今后一切有可能的宣传中，我都会注明这一点。</p>
+<hr>
+<p>之后可能到三月才会更新，天煞期末考试呜呜呜</p>
+]]></content>
+      <categories>
+        <category>Chemistry</category>
+        <category>Quantum Chemistry</category>
+        <category>Levine Quantum Chemistry</category>
+      </categories>
+      <tags>
+        <tag>Quantum Chemistry</tag>
+        <tag>Levine</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2023/02/04/hello-world/</url>
     <content><![CDATA[<p>尝试搭了博客…之后可能在上边写一些东西以及传点资源ww </p>
@@ -311,42 +347,6 @@ $$
         <tag>data</tag>
         <tag>NexT</tag>
         <tag>Study</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>决定试着翻译Levine的量子化学</title>
-    <url>/2023/02/06/levin0/</url>
-    <content><![CDATA[<p>如果有人问起“量子化学如何入门”，<del>那么除了推给他<a href="http://bbs.keinsci.com/thread-4447-1-1.html">卢老师的博文</a>外，</del>大部分人一定会首先推荐他去看 Ira N. Levine 教授的 <a href="https://voidmio.xyz/resources/levine-quantum-chemistry.pdf">Quantum Chemistry</a>。此书概念与数学推导兼备，写得系统且条理，公式推导及措辞均很易懂（可以说比很多结构化学书都要清晰）。如同书中所言：</p>
-<blockquote>
-<p>Derivations are given with enough detail to make them easy to follow, and wherever possible I avoid resorting to the frustrating phrase “it can be shown that.” The aim is to give students a solid understanding of the physical and mathematical aspects of quantum mechanics and molecular electronic structure.</p>
-</blockquote>
-<p>对于公式推导内容，Levine没有把所有的公式、结论都放在一个介绍性的章节或附录中，而是将数学与物理和化学结合起来。</p>
-<blockquote>
-<p>Immediate application of the mathematics to solving a quantum-mechanical problem will make the mathematics more meaningful to students than would separate study of the mathematics.</p>
-</blockquote>
-<p>Levine 的量子化学无疑是极优秀的，但最大的问题还是出在语言上。Sobereva 曾说过：</p>
-<blockquote>
-<p>Levine这书的最新版很适合出个中译版，免得很多初学者，特别是本科生，因为惧怕英文，去读市面上烂七八糟的中文书而白费大量时间。</p>
-</blockquote>
-<p>对于初出茅庐的、可能仅仅是出于兴趣学习量子化学的学生们，提到英语原版书多半心生怖惧，<del>虽然习惯后看原文比看翻译版更顺畅，</del>而更倾向于看一些差强人意的中文书籍，错过这本优秀的教材。所以于壬寅年末，我决定尝试翻译本书，可供后来者参照阅读。</p>
-<p>我选取的是最新的第七版，也是最后一版。原书及所有翻译产出均可在我的主页中<a href="https://voidmio.xyz/resources/">资源</a>处下载。</p>
-<p>02&#x2F;07&#x2F;2023 注<br>敲这篇文章时，距离我翻译完第一章已经有些时日了。其实翻译最初的目的只是做供我自己看的、日后复盘的资料，所以靠前的部分可能并不完善，只可意会（）</p>
-<p>古代在谈及本书，Sob 还说过：</p>
-<blockquote>
-<p>但如果出中译版，一定得是内行且负责的人翻译，否则照样是误导初学者</p>
-</blockquote>
-<p>本人很难称得上专业，最多只占一负责。但不够专业的人再“负责”也只是架谎凿空罢了，无法改变我是文学水平低下，对量化几乎没有属于自己的见解，甚至连全书都没有好好看完的半吊子。鉴于此，第五章及之后的翻译文本的大部将参考吕海港教授的部分翻译版本来处理<del>（前四章有时间再回去校对x懒透了）（也别问为什么是前四章）</del>，本人尽可能只进行进一步的美化、充实。我会尽力产出一部排版雅致，文笔酣畅的作品。当然，在今后一切有可能的宣传中，我都会注明这一点。</p>
-<hr>
-<p>之后可能到三月才会更新，天煞期末考试呜呜呜</p>
-]]></content>
-      <categories>
-        <category>Chemistry</category>
-        <category>Quantum Chemistry</category>
-        <category>Levine Quantum Chemistry</category>
-      </categories>
-      <tags>
-        <tag>Quantum Chemistry</tag>
-        <tag>Levine</tag>
       </tags>
   </entry>
   <entry>
