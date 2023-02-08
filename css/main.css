@@ -3022,3 +3022,33 @@ mjx-container[display='true'] + br {
     margin-bottom: 10px;
   }
 }
+body {
+  background-image: url("/images/back.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+.main-inner {
+  background: rgba(254,250,254,0.9);
+}
+.post-block {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 20px;
+  -webkit-box-shadow: 0 0 9px #664d33;
+  -moz-box-shadow: 0 0 9px rgba(255,220,255,0.8);
+  opacity: 1;
+}
+.sidebar {
+  opacity: 0.85;
+}
+.header-inner {
+  background: rgba(245,238,255,0.85);
+}
+.pagination {
+  opacity: 0.95;
+}
+.popup {
+  opacity: 0.85;
+}

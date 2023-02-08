@@ -302,6 +302,7 @@ $$
 <h2 id="小功能"><a href="#小功能" class="headerlink" title="小功能"></a>小功能</h2><p>back2top：回到顶部和滚动百分比设置<br>Reading progress bar：阅读进度条<br>Bookmark Support：书签<br>github_banner：右上的github猫<br>pace：加载条，Progress bar in the top during page loading.<br>Read more button：阅读全文按钮</p>
 <h2 id="字体font"><a href="#字体font" class="headerlink" title="字体font"></a>字体font</h2><p>分别是<br>侧栏字体 Global font settings used for all elements inside body.<br>大标题字体 Font settings for site title (.site-title).<br>小标题字体 Font settings for headlines (h1 to h6).<br>正文字体 Font settings for posts (.post-body).<br>代码框字体 Font settings for code and code blocks.</p>
 <h2 id="动画-Animation-Settings"><a href="#动画-Animation-Settings" class="headerlink" title="动画 Animation Settings"></a>动画 Animation Settings</h2><p>从<a href="https://theme-next.js.org/animate/">这里</a>得到动作名称。<br>分别是<br>post_block: 整块文章<br>post_header:<br>post_body:<br>coll_header:<br>sidebar: 整个头像侧栏</p>
+<h2 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h2><p>基本源于<a href="https://wolfdan.cn/next7%E4%B8%BB%E9%A2%98%E6%B7%BB%E5%8A%A0%E8%83%8C%E6%99%AF%EF%BC%8C%E5%B9%B6%E8%AE%BE%E7%BD%AE%E9%A1%B5%E9%9D%A2%E9%80%8F%E6%98%8E%E5%BA%A6/">这位佬的博文</a></p>
 ]]></content>
       <categories>
         <category>前端技术</category>
@@ -331,11 +332,11 @@ $$
 <p>对于初出茅庐的、可能仅仅是出于兴趣学习量子化学的学生们，提到英语原版书多半心生怖惧，<del>虽然习惯后看原文比看翻译版更顺畅，</del>而更倾向于看一些差强人意的中文书籍，错过这本优秀的教材。所以于壬寅年末，我决定尝试翻译本书，可供后来者参照阅读。</p>
 <p>我选取的是最新的第七版，也是最后一版。原书及所有翻译产出均可在我的主页中<a href="https://voidmio.xyz/resources/">资源</a>处下载。</p>
 <p>02&#x2F;07&#x2F;2023 注<br>敲这篇文章时，距离我翻译完第一章已经有些时日了。其实翻译最初的目的只是做供我自己看的、日后复盘的资料，所以靠前的部分可能并不完善，只可意会（）</p>
-<p>古代在谈及本书，Sob 还说过：</p>
+<p>古代谈及本书，Sob 还说过：</p>
 <blockquote>
 <p>但如果出中译版，一定得是内行且负责的人翻译，否则照样是误导初学者</p>
 </blockquote>
-<p>本人很难称得上专业，最多只占一负责。但不够专业的人再“负责”也只是架谎凿空罢了，无法改变我是文学水平低下，对量化几乎没有属于自己的见解，甚至连全书都没有好好看完的半吊子。鉴于此，第五章及之后的翻译文本的大部将参考吕海港教授的部分翻译版本来处理<del>（前四章有时间再回去校对x懒透了）（也别问为什么是前四章）</del>，本人尽可能只进行进一步的美化、充实。我会尽力产出一部排版雅致，文笔酣畅的作品。当然，在今后一切有可能的宣传中，我都会注明这一点。</p>
+<p>本人很难称得上专业，最多只占一负责。但不够专业的人再“负责”也只是架谎凿空罢了，无法改变我是文学水平低下，对量化几乎没有属于自己的见解，甚至连全书都没有好好看完的半吊子。鉴于此，第五章及之后的翻译文本的大部将参考吕海港教授的部分翻译版本来处理<del>（前四章有时间再回去校对x懒透了）（也别问为什么是前四章）</del>，本人尽可能只进行进一步的美化、充实，尽力产出一部排版雅致，文笔酣畅的作品。当然，在今后一切有可能的宣传中，我都会注明这一点。</p>
 <hr>
 <p>之后可能到三月才会更新，天煞期末考试呜呜呜</p>
 ]]></content>
