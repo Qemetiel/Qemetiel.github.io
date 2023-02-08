@@ -1,21 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/02/04/hello-world/</url>
-    <content><![CDATA[<p>尝试搭了博客…之后可能在上边写一些东西以及传点资源ww </p>
-<span id="more"></span>
-
-<p>搭建及优化的全过程可看<a href="https://voidmio.xyz/data">更新日志</a>。</p>
-]]></content>
-      <categories>
-        <category>data</category>
-      </categories>
-      <tags>
-        <tag>data</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Markdown Grammar</title>
     <url>/2023/02/05/first-post/</url>
     <content><![CDATA[<h1 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h1><p>参考资料 <a href="https://www.markdown.xyz/basic-syntax/">指南</a><br><a href="https://www.zybuluo.com/mdeditor">在线编辑markdown</a></p>
@@ -284,43 +269,18 @@ $$
       </tags>
   </entry>
   <entry>
-    <title>翻译了Levine的量子化学...[附第一章下载链接]</title>
-    <url>/2023/02/07/levin1/</url>
-    <content><![CDATA[<p>~~第一章其实在一月二十多号就翻译完了。。但当时还没有这个博客，图一乐~ ~~</p>
-<p>正如上一篇所言，处理第一章的前半部分只是为了自用，所以只求了逻辑通顺，其他方面并不优美，各位包含着瞧，原谅着看，欢迎多提建议~</p>
-<p>翻译初校版<a href="https://voidmio.xyz/resources/LQC1-zh.pdf">下载链接</a></p>
-<table><tr><td bgcolor=#e6dcd5>读者：“你自己校了吗？”</td></tr></table>
-<table><tr><td bgcolor=#dcd5e6>澪：“校了一部分。”</td></tr></table>
-<table><tr><td bgcolor=#e6dcd5>读者：“感觉怎么样？”</td></tr></table>
-<table><tr><td bgcolor=#dcd5e6>澪：“我改正了大部分不自然的句子”<br/>
-“但是我保留了一部分”<br/>
-“我觉得保留一部分不自然的地方”<br/>
-“才知道你看的是翻译。”</td></tr></table>
-<table><tr><td bgcolor=#e6dcd5>读者：“你是有意把它保留的吗？”</td></tr></table>
-<table><tr><td bgcolor=#dcd5e6>澪：“是自校的过程中，我留下了一部分。”</td></tr></table>
-<table><tr><td bgcolor=#e6dcd5>读者：“是故意的还是不小心的？”</td></tr></table>
-<table><tr><td bgcolor=#dcd5e6>澪：“是故意的。”</td></tr></table>
+    <title>Hello World</title>
+    <url>/2023/02/04/hello-world/</url>
+    <content><![CDATA[<p>尝试搭了博客…之后可能在上边写一些东西以及传点资源ww </p>
+<span id="more"></span>
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-<p><img src="https://imgs.qiubiaoqing.com/qiubiaoqing/imgs/63d4abe70c3ackzs.gif" alt="读者脸"></p>
+<p>搭建及优化的全过程可看<a href="https://voidmio.xyz/data">更新日志</a>。</p>
 ]]></content>
       <categories>
-        <category>Chemistry</category>
-        <category>Quantum Chemistry</category>
-        <category>Levine Quantum Chemistry</category>
+        <category>data</category>
       </categories>
       <tags>
-        <tag>Quantum Chemistry</tag>
-        <tag>Levine</tag>
+        <tag>data</tag>
       </tags>
   </entry>
   <entry>
@@ -378,6 +338,46 @@ $$
 <p>本人很难称得上专业，最多只占一负责。但不够专业的人再“负责”也只是架谎凿空罢了，无法改变我是文学水平低下，对量化几乎没有属于自己的见解，甚至连全书都没有好好看完的半吊子。鉴于此，第五章及之后的翻译文本的大部将参考吕海港教授的部分翻译版本来处理<del>（前四章有时间再回去校对x懒透了）（也别问为什么是前四章）</del>，本人尽可能只进行进一步的美化、充实。我会尽力产出一部排版雅致，文笔酣畅的作品。当然，在今后一切有可能的宣传中，我都会注明这一点。</p>
 <hr>
 <p>之后可能到三月才会更新，天煞期末考试呜呜呜</p>
+]]></content>
+      <categories>
+        <category>Chemistry</category>
+        <category>Quantum Chemistry</category>
+        <category>Levine Quantum Chemistry</category>
+      </categories>
+      <tags>
+        <tag>Quantum Chemistry</tag>
+        <tag>Levine</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>翻译了Levine的量子化学...[附第一章下载链接]</title>
+    <url>/2023/02/07/levin1/</url>
+    <content><![CDATA[<p>~~第一章其实在一月二十多号就翻译完了。。但当时还没有这个博客，图一乐~ ~~</p>
+<p>正如上一篇所言，处理第一章的前半部分只是为了自用，所以只求了逻辑通顺，其他方面并不优美，各位包含着瞧，原谅着看，欢迎多提建议~</p>
+<p>翻译初校版<a href="https://voidmio.xyz/resources/LQC1-zh.pdf">下载链接</a></p>
+<table><tr><td bgcolor=#e6dcd5>读者：“你自己校了吗？”</td></tr></table>
+<table><tr><td bgcolor=#dcd5e6>澪：“校了一部分。”</td></tr></table>
+<table><tr><td bgcolor=#e6dcd5>读者：“感觉怎么样？”</td></tr></table>
+<table><tr><td bgcolor=#dcd5e6>澪：“我改正了大部分不自然的句子”<br/>
+“但是我保留了一部分”<br/>
+“我觉得保留一部分不自然的地方”<br/>
+“才知道你看的是翻译。”</td></tr></table>
+<table><tr><td bgcolor=#e6dcd5>读者：“你是有意把它保留的吗？”</td></tr></table>
+<table><tr><td bgcolor=#dcd5e6>澪：“是自校的过程中，我留下了一部分。”</td></tr></table>
+<table><tr><td bgcolor=#e6dcd5>读者：“是故意的还是不小心的？”</td></tr></table>
+<table><tr><td bgcolor=#dcd5e6>澪：“是故意的。”</td></tr></table>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<p><img src="https://imgs.qiubiaoqing.com/qiubiaoqing/imgs/63d4abe70c3ackzs.gif" alt="读者脸"></p>
 ]]></content>
       <categories>
         <category>Chemistry</category>
