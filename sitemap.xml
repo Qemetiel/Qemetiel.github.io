@@ -142,20 +142,6 @@
   </url>
   
   <url>
-    <loc>http://voidmio.xyz/tags/NexT/</loc>
-    <lastmod>2023-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://voidmio.xyz/tags/Study/</loc>
-    <lastmod>2023-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://voidmio.xyz/tags/Quantum-Chemistry/</loc>
     <lastmod>2023-02-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -164,6 +150,20 @@
   
   <url>
     <loc>http://voidmio.xyz/tags/Levine/</loc>
+    <lastmod>2023-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://voidmio.xyz/tags/NexT/</loc>
+    <lastmod>2023-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://voidmio.xyz/tags/Study/</loc>
     <lastmod>2023-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -186,21 +186,14 @@
   </url>
   
   <url>
-    <loc>http://voidmio.xyz/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/Markdown/</loc>
-    <lastmod>2023-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://voidmio.xyz/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/NexT/</loc>
-    <lastmod>2023-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://voidmio.xyz/categories/Chemistry/</loc>
+    <lastmod>2023-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://voidmio.xyz/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/Markdown/</loc>
     <lastmod>2023-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -215,6 +208,13 @@
   
   <url>
     <loc>http://voidmio.xyz/categories/Chemistry/Quantum-Chemistry/Levine-Quantum-Chemistry/</loc>
+    <lastmod>2023-02-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://voidmio.xyz/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/NexT/</loc>
     <lastmod>2023-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
