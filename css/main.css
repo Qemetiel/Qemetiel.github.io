@@ -3056,9 +3056,16 @@ body {
 }
 .sidebar {
   opacity: 0.85;
+  color: #0f0c14;
 }
 .header-inner {
   background: rgba(245,238,255,0.85);
+}
+.post-copyright {
+  opacity: 0.5;
+}
+.wl-panel {
+  opacity: 0.5;
 }
 .pagination {
   opacity: 0.95;
