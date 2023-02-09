@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://voidmio.xyz/data/markdown.html</loc>
+    
+    <lastmod>2023-02-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://voidmio.xyz/data/index.html</loc>
+    
+    <lastmod>2023-02-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://voidmio.xyz/pics/index.html</loc>
     
     <lastmod>2023-02-09</lastmod>
@@ -29,25 +47,7 @@
   </url>
   
   <url>
-    <loc>http://voidmio.xyz/data/index.html</loc>
-    
-    <lastmod>2023-02-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://voidmio.xyz/2023/02/05/hexo/</loc>
-    
-    <lastmod>2023-02-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://voidmio.xyz/2023/02/05/first-post/</loc>
+    <loc>http://voidmio.xyz/data/next.html</loc>
     
     <lastmod>2023-02-09</lastmod>
     
@@ -135,13 +135,6 @@
   </url>
   
   <url>
-    <loc>http://voidmio.xyz/tags/Markdown/</loc>
-    <lastmod>2023-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://voidmio.xyz/tags/Quantum-Chemistry/</loc>
     <lastmod>2023-02-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -155,28 +148,7 @@
     <priority>0.2</priority>
   </url>
   
-  <url>
-    <loc>http://voidmio.xyz/tags/NexT/</loc>
-    <lastmod>2023-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://voidmio.xyz/tags/Study/</loc>
-    <lastmod>2023-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
 
-  
-  <url>
-    <loc>http://voidmio.xyz/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/</loc>
-    <lastmod>2023-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
   <url>
     <loc>http://voidmio.xyz/categories/data/</loc>
@@ -186,21 +158,7 @@
   </url>
   
   <url>
-    <loc>http://voidmio.xyz/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/Markdown/</loc>
-    <lastmod>2023-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://voidmio.xyz/categories/Chemistry/</loc>
-    <lastmod>2023-02-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://voidmio.xyz/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/NexT/</loc>
     <lastmod>2023-02-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
