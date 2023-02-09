@@ -3034,6 +3034,15 @@ body {
   background-position: 50% 50%;
   background-size: cover;
 }
+.brand {
+  color: #f1eef5;
+}
+.site-subtitle {
+  color: #eef2f5;
+}
+.site-brand-container {
+  background: url("/images/head.jpg");
+}
 .main-inner {
   background: rgba(254,250,254,0.9);
 }
