@@ -15,6 +15,62 @@
       </tags>
   </entry>
   <entry>
+    <title>翻译了Levine的量子化学...[附第一章下载链接]</title>
+    <url>/2023/02/07/levine1/</url>
+    <content><![CDATA[<p><del>第一章其实在一月二十多号就翻译完了。。但当时还没有这个博客，图一乐www</del></p>
+<p>正如上一篇所言，处理第一章的前半部分只是为了自用，所以只求了逻辑通顺，其他方面并不优美，各位包含着瞧，原谅着看，欢迎多提建议~</p>
+<p>翻译初校版<a href="https://voidmio.xyz/resources/Chem/QC/LQC1-zh.pdf">下载链接</a></p>
+<table><tr><td bgcolor=#e6dcd5>读者：“你自己校了吗？”</td></tr></table>
+<table><tr><td bgcolor=#dcd5e6>澪：“校了一部分。”</td></tr></table>
+<table><tr><td bgcolor=#e6dcd5>读者：“感觉怎么样？”</td></tr></table>
+<table><tr><td bgcolor=#dcd5e6>澪：“我改正了大部分不自然的句子”<br/>
+“但是我保留了一部分”<br/>
+“我觉得保留一部分不自然的地方”<br/>
+“才知道你看的是翻译。”</td></tr></table>
+<table><tr><td bgcolor=#e6dcd5>读者：“你是有意把它保留的吗？”</td></tr></table>
+<table><tr><td bgcolor=#dcd5e6>澪：“是自校的过程中，我留下了一部分。”</td></tr></table>
+<table><tr><td bgcolor=#e6dcd5>读者：“是故意的还是不小心的？”</td></tr></table>
+<table><tr><td bgcolor=#dcd5e6>澪：“是故意的。”</td></tr></table>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<!-- ![读者脸](https://imgs.qiubiaoqing.com/qiubiaoqing/imgs/63d4abe70c3ackzs.gif) -->
+<p><img src="/images/postimg/levine/readerface.jpg" alt="读者脸"></p>
+]]></content>
+      <categories>
+        <category>Chemistry</category>
+        <category>Quantum Chemistry</category>
+        <category>Levine Quantum Chemistry</category>
+      </categories>
+      <tags>
+        <tag>Quantum Chemistry</tag>
+        <tag>Levine</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Levine量子化学第二章译版完成 [附第二章下载链接]</title>
+    <url>/2023/02/22/levine2/</url>
+    <content><![CDATA[<p>~~ 其实也早就翻译好力，现在终于有时间校对并且上传啦 ~~</p>
+]]></content>
+      <categories>
+        <category>Chemistry</category>
+        <category>Quantum Chemistry</category>
+        <category>Levine Quantum Chemistry</category>
+      </categories>
+      <tags>
+        <tag>Quantum Chemistry</tag>
+        <tag>Levine</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>决定试着翻译Levine的量子化学</title>
     <url>/2023/02/06/levine0/</url>
     <content><![CDATA[<p>如果有人问起“量子化学如何入门”，<del>那么除了推给他<a href="http://bbs.keinsci.com/thread-4447-1-1.html">卢老师的博文</a>外，</del>大部分人一定会首先推荐他去看 Ira N. Levine 教授的 <a href="https://voidmio.xyz/resources/levine-quantum-chemistry.pdf">Quantum Chemistry</a>。此书概念与数学推导兼备，写得系统且条理，公式推导及措辞均很易懂（可以说比很多结构化学书都要清晰）。如同书中所言：</p>
@@ -321,6 +377,50 @@ $$
       </tags>
   </entry>
   <entry>
+    <title>浅述周环反应及相关理论</title>
+    <url>/2023/02/23/pericyclic/</url>
+    <content><![CDATA[<h1 id="周环反应-Pericyclic-Reaction"><a href="#周环反应-Pericyclic-Reaction" class="headerlink" title="周环反应 Pericyclic Reaction"></a>周环反应 Pericyclic Reaction</h1><h2 id="周环反应概述"><a href="#周环反应概述" class="headerlink" title="周环反应概述"></a>周环反应概述</h2><h3 id="历史背景"><a href="#历史背景" class="headerlink" title="历史背景"></a>历史背景</h3><p>在 20 世纪 60 年代之前，人们认为有机中的反应性是由以下因素主导的：</p>
+<ul>
+<li>反应物和产物的相对稳定性（即热力学控制）；<ul>
+<li>如反应物或产物的芳香性。</li>
+</ul>
+</li>
+<li>过渡态的早期&#x2F;晚期性质（<a href="http://doi.org/10.1021/ja01607a027">Hammond 假设</a>，动力学控制）；</li>
+<li>几何效应，如张力、空间相互作用、氢键、邻基效应（熵效应）；</li>
+<li>静电效应，如官能团（如羰基）的极性。</li>
+</ul>
+<p>在 20 世纪 60 年代早期维生素 B12 的合成过程中，罗伯特·伍德沃德 (Robert Woodward) 总结道（了解完整故事参见 <em>Chem. Soc. Special Publications (Aromaticity)</em>, <strong>1967</strong>, 21, 217），上述因素都不能合理解释以下反应。当时人们认为，使用简单的分子模型（另一位伟大的有机化学家和诺贝尔奖得主德里克·巴顿 (Derek Barton) 于 1951 年开创了定量模型），预测产物为 J，因为生成 H 的路径在空间上更加严苛，因此形成的可能性较小。然而事实情况恰恰相反：<br><img src="/images/postimg/pericyclic/vb12.png" alt="H 是热反应主产物"><br>一种新的解释基于立体电子效应，即电子的三维性质和它们的相位关系可以在上述各种因素中占优势。这种周环反应的立体电子控制理论是伍德沃德与理论学家<a href="https://www.youtube.com/watch?v=qUi_vZO6tZU">霍夫曼 (Roald Hoffmann)</a> 一起使用分子轨道对称性守恒（在后文会详细讲解）推导出来的。伍德沃德在霍夫曼（和福井 Fukui）因这项工作（<a href="https://doi/abs/10.1021/ja01080a054">发表于</a> <em>J. Am. Chem. Soc.</em>, <strong>1965</strong>, 87, 395，<a href="http://dx.doi.org/10.1021/ar50001a003">这篇文章的评论在这里</a>）获诺贝尔奖之前就去世了。立体电子效应（更准确地说是分子波函数的三维性质）对解释反应性至关重要，这对后人理解有机化学产生了巨大的影响。</p>
+<h3 id="周环反应的定义与性质"><a href="#周环反应的定义与性质" class="headerlink" title="周环反应的定义与性质"></a>周环反应的定义与性质</h3><p>周环反应是指化学键在协同的环状过渡状态下形成或断裂的反应。协同反应 (Concerted Reaction) 是指在反应过程中不涉及中间产物的反应（左图）。图中还显示了具有离散中间体的分步非协同、非周环反应（右图）。<br><img src="/images/postimg/pericyclic/irc.gif" alt="IRC"><br>因此，理解周环反应必然需要理解如何控制它们的过渡态。<br>周环反应通常具有这些特征性质（尽管通常不难发现这些规则的例外情况）：</p>
+<ol>
+<li>没有亲核或亲电组分。这意味着在写机理“推箭头”时，箭头没有起点也没有终点，可以按顺时针或逆时针方向进行推箭。</li>
+<li>通常情况下，周环反应不需要任何催化剂来促进。然而，许多过渡金属配合物可以通过 d 轨道参与催化周环反应。Lewis 酸还可以直接催化多种形式的周环反应，或者通过改变反应的机理，使其成为一个分步的过程，不再是真正的周环反应。</li>
+<li>周环反应通常表现出非常高的立体选择性。</li>
+<li>周环反应通常可以用光（在正文中表示为hν）和热（在正文中表示为 Δ）来促进。通常，两组条件下反应的立体化学是不同的（最初人们认为它们总是相反的）。目前对光化学路线的思考更为复杂。</li>
+<li>周环反应可以在没有溶剂的气相中发生。溶剂对反应速率的影响相对较小（除非反应物本身恰好带电荷）。人们曾对<a href="http://dx.doi.org/10.1039/b507207g">用水加速周环反应</a>（大约 10 到 100 倍）进行了大量研究，但这种加速很大程度上是由于过渡态中氢键的形成。</li>
+<li>可以使用字面意义上的机械应力（如研磨）来<a href="https://onlinelibrary.wiley.com/doi/10.1002/anie.201003978">影响</a>周环反应结果（<a href="https://en.wikipedia.org/wiki/Mechanochemistry">机械化学 Mechanochemistry</a>）。</li>
+<li>对于那些体积大幅减少的反应，可以通过加压来加速反应。还可以通过设计催化剂（“<a href="https://link.springer.com/article/10.1023/A:1008082732631">分子容器</a>”），提供合适的“空腔”以促进周环反应，如环加成反应。</li>
+<li>与亲核&#x2F;亲电反应不同，周环反应是不寻常的，因为已知的催化它们的<a href="https://doi.org/10.1002/cbic.201100431">酶</a>少得惊人。人工催化抗体(‘abzyme’)可以被创造出来执行这一壮举，‘Diels-Alderase’可以对环加成反应起作用，Chorismate mutase 可以催化 Claisen 重排，其通过上述第 5 和第 7 点发挥催化作用。</li>
+</ol>
+<h3 id="有机周环反应的主要类别"><a href="#有机周环反应的主要类别" class="headerlink" title="有机周环反应的主要类别"></a>有机周环反应的主要类别</h3><p>在这里，我们没有添加也可以描述为周环的丰富多样的无机反应。<br>有机周环反应有<strong>四个</strong>主要的类别，涵盖了非常广泛的有机和有机金属化学，并为理解合成和有机化学的微妙方面奠定了丰富的基础。<br><img src="/images/postimg/pericyclic/shift8.png" alt="bond-shifting"></p>
+<h4 id="主要类别"><a href="#主要类别" class="headerlink" title="主要类别"></a>主要类别</h4><p>在处理真正的周环反应之前，我们应该排除<strong>键迁移</strong>异构化（如下所示，一个相对较慢的过程，<del>ms）或<strong>共振</strong>（如在苯中，一个极快的过程，</del>fs）。对于周环反应来说，必须有<strong>至少一个</strong> σ 键形成或断裂。</p>
+<h5 id="电环化反应"><a href="#电环化反应" class="headerlink" title="电环化反应"></a>电环化反应</h5><p>电环化反应涉及在线性共轭 π 体系的两端间协同形成一个 σ 键，或者一个 σ 键断裂产生线性共轭体系的逆反应。这里的“共轭”是指由 C-C 多重键或孤对电子体系。<br><img src="/images/postimg/pericyclic/electrocyclic1.png"></p>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/postimg/pericyclic/electrocyclic3.gif"></div><div class="group-picture-column"><img src="/images/postimg/pericyclic/electrocyclic4.gif"></div></div><div class="group-picture-row"></div></div>
+
+<h5 id="环加成和环消除反应"><a href="#环加成和环消除反应" class="headerlink" title="环加成和环消除反应"></a>环加成和环消除反应</h5><p>环加成反应是指在<strong>两个或多个</strong>共轭 π 体系的末端间协同形成两个或多个 σ 键。逆反应涉及<strong>两个或更多</strong> σ 键的协同断裂，以产生两个或多个共轭 π 键。<br><img src="/images/postimg/pericyclic/electrocyclic2.png"></p>
+<div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/postimg/pericyclic/electrocyclic5.gif"></div><div class="group-picture-column"><img src="/images/postimg/pericyclic/electrocyclic6.gif"></div></div><div class="group-picture-row"></div></div>
+<p><img src="/images/postimg/pericyclic/electrocyclic7.gif"><br>上图最后一个例子是一个三组分的 $_π2_s+ _π2_s+ _π2_s$ 环消除反应。<br>而对于两个 σ 键的形成或裂解发生在单个原子上的特定反应，被称为螯键反应：<br><img src="/images/postimg/pericyclic/electrocyclic8.png"><br><img src="/images/postimg/pericyclic/electrocyclic8.gif"></p>
+<h5 id="sigma-迁移反应"><a href="#sigma-迁移反应" class="headerlink" title="sigma 迁移反应"></a>sigma 迁移反应</h5><h5 id="Ene-反应"><a href="#Ene-反应" class="headerlink" title="Ene 反应"></a>Ene 反应</h5><h4 id="次要类别"><a href="#次要类别" class="headerlink" title="次要类别"></a>次要类别</h4><h5 id="Multiple-personality-pericyclics"><a href="#Multiple-personality-pericyclics" class="headerlink" title="Multiple personality pericyclics."></a>Multiple personality pericyclics.</h5>]]></content>
+      <categories>
+        <category>Chemistry</category>
+        <category>Organic Chemistry</category>
+        <category>Pericyclic Reaction</category>
+      </categories>
+      <tags>
+        <tag>Organic Chemistry</tag>
+        <tag>Pericyclic</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>NexT Checkpoint</title>
     <url>/2023/02/05/next/</url>
     <content><![CDATA[<h1 id="NexT"><a href="#NexT" class="headerlink" title="NexT"></a>NexT</h1><p>目前为止用到的改动</p>
@@ -359,47 +459,6 @@ $$
         <tag>data</tag>
         <tag>NexT</tag>
         <tag>Study</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>翻译了Levine的量子化学...[附第一章下载链接]</title>
-    <url>/2023/02/07/levine1/</url>
-    <content><![CDATA[<p><del>第一章其实在一月二十多号就翻译完了。。但当时还没有这个博客，图一乐www</del></p>
-<p>正如上一篇所言，处理第一章的前半部分只是为了自用，所以只求了逻辑通顺，其他方面并不优美，各位包含着瞧，原谅着看，欢迎多提建议~</p>
-<p>翻译初校版<a href="https://voidmio.xyz/resources/Chem/QC/LQC1-zh.pdf">下载链接</a></p>
-<table><tr><td bgcolor=#e6dcd5>读者：“你自己校了吗？”</td></tr></table>
-<table><tr><td bgcolor=#dcd5e6>澪：“校了一部分。”</td></tr></table>
-<table><tr><td bgcolor=#e6dcd5>读者：“感觉怎么样？”</td></tr></table>
-<table><tr><td bgcolor=#dcd5e6>澪：“我改正了大部分不自然的句子”<br/>
-“但是我保留了一部分”<br/>
-“我觉得保留一部分不自然的地方”<br/>
-“才知道你看的是翻译。”</td></tr></table>
-<table><tr><td bgcolor=#e6dcd5>读者：“你是有意把它保留的吗？”</td></tr></table>
-<table><tr><td bgcolor=#dcd5e6>澪：“是自校的过程中，我留下了一部分。”</td></tr></table>
-<table><tr><td bgcolor=#e6dcd5>读者：“是故意的还是不小心的？”</td></tr></table>
-<table><tr><td bgcolor=#dcd5e6>澪：“是故意的。”</td></tr></table>
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-<!-- ![读者脸](https://imgs.qiubiaoqing.com/qiubiaoqing/imgs/63d4abe70c3ackzs.gif) -->
-<p><img src="/images/readerface.jpg" alt="读者脸"></p>
-]]></content>
-      <categories>
-        <category>Chemistry</category>
-        <category>Quantum Chemistry</category>
-        <category>Levine Quantum Chemistry</category>
-      </categories>
-      <tags>
-        <tag>Quantum Chemistry</tag>
-        <tag>Levine</tag>
       </tags>
   </entry>
 </search>
