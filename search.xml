@@ -192,20 +192,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Hello World</title>
-    <url>/2023/02/04/hello-world/</url>
-    <content><![CDATA[<span id="more"></span>
-
-<p>搭建及优化的全过程可看<a href="https://voidmio.xyz/data">更新日志</a>。</p>
-]]></content>
-      <categories>
-        <category>data</category>
-      </categories>
-      <tags>
-        <tag>data</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Dead Ends and Detours</title>
     <url>/2023/03/16/deadend/</url>
     <content><![CDATA[<p>读了 <em>More Dead Ends and Detours: En Route to Successful Total Synthesis</em>, 本篇算是一点笔记。。</p>
@@ -296,6 +282,20 @@
       </tags>
   </entry>
   <entry>
+    <title>Hello World</title>
+    <url>/2023/02/04/hello-world/</url>
+    <content><![CDATA[<span id="more"></span>
+
+<p>搭建及优化的全过程可看<a href="https://voidmio.xyz/data">更新日志</a>。</p>
+]]></content>
+      <categories>
+        <category>data</category>
+      </categories>
+      <tags>
+        <tag>data</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>决定试着翻译Levine的量子化学</title>
     <url>/2023/02/06/levine0/</url>
     <content><![CDATA[<p>如果有人问起“量子化学如何入门”，<del>那么除了推给他<a href="http://bbs.keinsci.com/thread-4447-1-1.html">卢老师的博文</a>外，</del>大部分人一定会首先推荐他去看 Ira N. Levine 教授的 <a href="https://voidmio.xyz/resources/levine-quantum-chemistry.pdf">Quantum Chemistry</a>。此书概念与数学推导兼备，写得系统且条理，公式推导及措辞均很易懂（可以说比很多结构化学书都要清晰）。如同书中所言：</p>
@@ -320,6 +320,25 @@
 <p>本人很难称得上专业，最多只占一负责。但不够专业的人再“负责”也只是架谎凿空罢了，无法改变我是文学水平低下，对量化几乎没有属于自己的见解，甚至连全书都没有好好看完的半吊子。鉴于此，第五章及之后的翻译文本的大部将参考吕海港教授的部分翻译版本来处理<del>（前四章有时间再回去校对x懒透了）（也别问为什么是前四章）</del>，本人尽可能只进行进一步的美化、充实，尽力产出一部排版雅致，文笔酣畅的作品。当然，在今后一切有可能的宣传中，我都会注明这一点。</p>
 <hr>
 <p>之后可能到三月才会更新，天煞期末考试呜呜呜</p>
+]]></content>
+      <categories>
+        <category>Chemistry</category>
+        <category>Quantum Chemistry</category>
+        <category>Levine Quantum Chemistry</category>
+      </categories>
+      <tags>
+        <tag>Quantum Chemistry</tag>
+        <tag>Levine</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Levine量子化学第二章译版完成 [附第二章下载链接]</title>
+    <url>/2023/02/22/levine2/</url>
+    <content><![CDATA[<p><del>其实也早就翻译好力，现在终于有时间校对并且上传啦</del></p>
+<p>翻译初校版<a href="https://voidmio.xyz/resources/Chem/QC/LQC2-zh.pdf">下载链接</a></p>
+<p><del>本来想着再校对一下，看了两页头昏眼花，老了老了</del></p>
+<p><del>另外这章字体似乎比第一章小点，俺也不知道为啥啊救命</del></p>
+<p>原书及所有翻译产出均可在我的主页中<a href="https://voidmio.xyz/resources/">资源</a>处下载。</p>
 ]]></content>
       <categories>
         <category>Chemistry</category>
@@ -361,25 +380,6 @@
 
 <!-- ![读者脸](https://imgs.qiubiaoqing.com/qiubiaoqing/imgs/63d4abe70c3ackzs.gif) -->
 <p><img src="/images/postimg/levine/readerface.jpg" alt="读者脸"></p>
-<p>原书及所有翻译产出均可在我的主页中<a href="https://voidmio.xyz/resources/">资源</a>处下载。</p>
-]]></content>
-      <categories>
-        <category>Chemistry</category>
-        <category>Quantum Chemistry</category>
-        <category>Levine Quantum Chemistry</category>
-      </categories>
-      <tags>
-        <tag>Quantum Chemistry</tag>
-        <tag>Levine</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Levine量子化学第二章译版完成 [附第二章下载链接]</title>
-    <url>/2023/02/22/levine2/</url>
-    <content><![CDATA[<p><del>其实也早就翻译好力，现在终于有时间校对并且上传啦</del></p>
-<p>翻译初校版<a href="https://voidmio.xyz/resources/Chem/QC/LQC2-zh.pdf">下载链接</a></p>
-<p><del>本来想着再校对一下，看了两页头昏眼花，老了老了</del></p>
-<p><del>另外这章字体似乎比第一章小点，俺也不知道为啥啊救命</del></p>
 <p>原书及所有翻译产出均可在我的主页中<a href="https://voidmio.xyz/resources/">资源</a>处下载。</p>
 ]]></content>
       <categories>
