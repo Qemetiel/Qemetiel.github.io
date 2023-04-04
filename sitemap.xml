@@ -178,6 +178,13 @@
   </url>
   
   <url>
+    <loc>http://voidmio.xyz/tags/data/</loc>
+    <lastmod>2023-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://voidmio.xyz/tags/Organic-Chemistry/</loc>
     <lastmod>2023-04-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -186,13 +193,6 @@
   
   <url>
     <loc>http://voidmio.xyz/tags/Synthesis/</loc>
-    <lastmod>2023-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://voidmio.xyz/tags/data/</loc>
     <lastmod>2023-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -220,6 +220,13 @@
   </url>
   
   <url>
+    <loc>http://voidmio.xyz/tags/Pericyclic/</loc>
+    <lastmod>2023-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
     <loc>http://voidmio.xyz/tags/NexT/</loc>
     <lastmod>2023-04-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -228,13 +235,6 @@
   
   <url>
     <loc>http://voidmio.xyz/tags/Study/</loc>
-    <lastmod>2023-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://voidmio.xyz/tags/Pericyclic/</loc>
     <lastmod>2023-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -250,14 +250,14 @@
   </url>
   
   <url>
-    <loc>http://voidmio.xyz/categories/Chemistry/</loc>
+    <loc>http://voidmio.xyz/categories/data/</loc>
     <lastmod>2023-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>http://voidmio.xyz/categories/data/</loc>
+    <loc>http://voidmio.xyz/categories/Chemistry/</loc>
     <lastmod>2023-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -271,13 +271,6 @@
   </url>
   
   <url>
-    <loc>http://voidmio.xyz/categories/Chemistry/Quantum-Chemistry/</loc>
-    <lastmod>2023-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>http://voidmio.xyz/categories/Chemistry/Organic-Chemistry/</loc>
     <lastmod>2023-04-04</lastmod>
     <changefreq>weekly</changefreq>
@@ -285,7 +278,14 @@
   </url>
   
   <url>
-    <loc>http://voidmio.xyz/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/</loc>
+    <loc>http://voidmio.xyz/categories/Chemistry/Quantum-Chemistry/</loc>
+    <lastmod>2023-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://voidmio.xyz/categories/Chemistry/Organic-Chemistry/Total-Synthesis/</loc>
     <lastmod>2023-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -299,7 +299,14 @@
   </url>
   
   <url>
-    <loc>http://voidmio.xyz/categories/Chemistry/Organic-Chemistry/Total-Synthesis/</loc>
+    <loc>http://voidmio.xyz/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/</loc>
+    <lastmod>2023-04-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>http://voidmio.xyz/categories/Chemistry/Organic-Chemistry/Pericyclic-Reaction/</loc>
     <lastmod>2023-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -314,13 +321,6 @@
   
   <url>
     <loc>http://voidmio.xyz/categories/%E5%89%8D%E7%AB%AF%E6%8A%80%E6%9C%AF/NexT/</loc>
-    <lastmod>2023-04-04</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>http://voidmio.xyz/categories/Chemistry/Organic-Chemistry/Pericyclic-Reaction/</loc>
     <lastmod>2023-04-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
