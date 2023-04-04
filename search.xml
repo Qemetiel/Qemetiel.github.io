@@ -1,6 +1,287 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>关于 Linux 操作的一些事情</title>
+    <url>/2023/03/03/aboutLinux/</url>
+    <content><![CDATA[<p>昂。写这章的目的其实不在于自己看，更多是为了再有人问我什么东西怎么操作时我可以直接甩链接（（（</p>
+<p>另，本文没什么专业性，多是用大白话描述某个命令最简单的用途，以及达到某个目的可以采用最直接的方法。<del>这不过是一个化学人为了自己的一厢情愿，所能付出的一切罢了。</del>但如有什么重大错误还请指正w</p>
+<p>本人使用的平台：CentOS 7.6。其实现在更建议使用 RockyLinux，但至少 RockyLinux 9 不是很喜欢我的电脑，各种卡。二者基本操作区别不大，自己看着装吧。CentOS 历史发行版均可在<a href="https://wiki.centos.org/Download">官网</a>下载 DVD 镜像。</p>
+<p><del>Ubuntu 别来问我 Ubuntu 别来问我 Ubuntu 别来问我 Ubuntu 别来问我 Ubuntu 别来问我</del></p>
+<p>大部分是用虚拟机运行的，大概还要加入一部分 VMware 的操作。听说 <a href="https://multipass.run/">Multipass</a> 也挺好的，有时间去折腾折腾。</p>
+<p>其实随便搁哪好好研究两天就会比我的水平高得多，这些完全是给<del>我这样的</del>没啥专业研究需求的小白写的。</p>
+<p>就这样吧。。接下来是正文</p>
+<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><h2 id="常识"><a href="#常识" class="headerlink" title="常识"></a>常识</h2><p><del>别问为什么写，问就是真有人不知道，我靠。。。</del></p>
+<h3 id="Terminal-操作"><a href="#Terminal-操作" class="headerlink" title="Terminal 操作"></a>Terminal 操作</h3><p>tab 自动补全文件名或目录名称；<br>俩 tab 输出当前目录中可能的名称。<br>&gt; 重定向，比如把终端输出内容输出到某文件。<br>| 管道，将 | 前命令输出作为 | 后命令的输入处理。</p>
+<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>根目录 &#x2F; ；<br>当前目录 . ；上级目录 .. ；<br>相对路径绝对路径自己整明白。</p>
+<h3 id="通配符"><a href="#通配符" class="headerlink" title="通配符"></a>通配符</h3><table>
+<thead>
+<tr>
+<th align="center">通配符</th>
+<th align="center">作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">*</td>
+<td align="center">代表任意数量的任意字符</td>
+</tr>
+<tr>
+<td align="center">？</td>
+<td align="center">代表任意<strong>一个</strong>字符</td>
+</tr>
+<tr>
+<td align="center">[12345]</td>
+<td align="center">代表 1&#x2F;2&#x2F;3&#x2F;4&#x2F;5 中的任意一个</td>
+</tr>
+<tr>
+<td align="center">[m-s]</td>
+<td align="center">代表 m~s 中的任意一个</td>
+</tr>
+<tr>
+<td align="center">…</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><p>command  –help 或 man command：查看命令帮助</p>
+<h3 id="权限设置"><a href="#权限设置" class="headerlink" title="权限设置"></a>权限设置</h3><p>groupadd groupname: 添加用户组。</p>
+<p>gpasswd [-a username] groupname 添加用户组密码。</p>
+<ul>
+<li>-a: 把用户加入该组</li>
+<li>-d: 把用户从该组删除</li>
+<li>grep groupname &#x2F;etc&#x2F;group: 查看用户组信息。</li>
+</ul>
+<p>chgrp [-R] destinationgroup filename: 改变文件(文件夹)所属用户组</p>
+<p>chown [-R] destinationuser filename: 改变文件(文件夹)所属用户</p>
+<p>chmod 设置权限 r&#x3D;1，w&#x3D;2，x&#x3D;4</p>
+<ul>
+<li>-R 同时递归设置文件夹下所有子文件和文件夹（chmod 750 .&#x2F;* -R）</li>
+</ul>
+<h3 id="文件操作-等"><a href="#文件操作-等" class="headerlink" title="文件操作 等"></a>文件操作 等</h3><p>pwd: 输出当前工作目录 print wrok directory</p>
+<p>ls: 查看当前文件夹下内容，可使用通配符。</p>
+<ul>
+<li>-a: 显示隐藏</li>
+<li>-l: 长型输出 同 ll；加 -h 使文件大小美观（human-readable output）</li>
+<li>-R: 递归输出</li>
+<li>-d: 只输出文件夹</li>
+</ul>
+<p>tree: 以树状图输出当前目录下文件结构，可 yum install tree 下载，不下也无所谓。</p>
+<ul>
+<li>ls 的基本都能用，其他 –help 自己看看</li>
+</ul>
+<p>cd: 打开文件夹 change dir</p>
+<p>touch: 新建文件</p>
+<p>mkdir: 新建文件夹</p>
+<ul>
+<li>-p: 递归创建</li>
+</ul>
+<p>rm: 删除</p>
+<ul>
+<li>-r: 递归删除目录</li>
+<li>-f: 强制删除</li>
+</ul>
+<p>cp: 复制。<code>cp [源文件地址] [目标文件地址]</code></p>
+<ul>
+<li>-r: 递归复制，可复制目录</li>
+<li>-i: 覆盖提示</li>
+</ul>
+<p>mv: 移动。和 cp 差不多。可用于某文件重命名。</p>
+<h3 id="文件内容操作-等"><a href="#文件内容操作-等" class="headerlink" title="文件内容操作 等"></a>文件内容操作 等</h3><p>grep: 文本搜索。<code>grep [目标字符串] [处理的文件名]</code> </p>
+<ul>
+<li>-n: 显示行号<br>关于目标匹配的设定–正则表达都可以用</li>
+<li>^sth: 要求 sth 出现在行首</li>
+<li>sth$: 要求 sth 出现在行尾</li>
+</ul>
+<p>echo: 输出。默认输出在终端。</p>
+<ul>
+<li>echo sth &gt; ww.txt 将 sth 写入 ww 文件</li>
+<li>echo sth &gt;&gt; ww.txt 将 sth 追加写入 ww 文件尾</li>
+</ul>
+<h3 id="查看硬件-等"><a href="#查看硬件-等" class="headerlink" title="查看硬件 等"></a>查看硬件 等</h3><p>ifconfig 查看 ip 等网卡信息<br>ping 检测连接</p>
+<p>free 查看内存</p>
+<ul>
+<li>-b, -k, -m, -g: 单位</li>
+<li>-h, –human         show human-readable output</li>
+<li>-t, –total         show total for RAM + swap</li>
+</ul>
+<p>du</p>
+<ul>
+<li>du -h –max-depth&#x3D;n：查看 n 层目录下的文件、文件夹大小</li>
+</ul>
+<p>lsblk 查看 sda 分区</p>
+<p>压缩和解压</p>
+<table>
+<thead>
+<tr>
+<th align="center">A</th>
+<th align="center">B</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">-c 建立压缩档案</td>
+<td align="center">-z gzip</td>
+</tr>
+<tr>
+<td align="center">-x 解压缩</td>
+<td align="center">-j bz2</td>
+</tr>
+<tr>
+<td align="center">-t 查看内容</td>
+<td align="center">-Z compress</td>
+</tr>
+<tr>
+<td align="center">-r 向包中追加文件</td>
+<td align="center">-v 显示过程</td>
+</tr>
+<tr>
+<td align="center">-u 更新包中文件</td>
+<td align="center">-O 将文件解开到标准输出</td>
+</tr>
+<tr>
+<td align="center">-f 一般必须加，使用档案名</td>
+<td align="center"></td>
+</tr>
+</tbody></table>
+<p>常用的：<br>-c：压缩，如tar -cvf jpg.tar *.jpg<br>-x：解压，如tar -xvf jpg.tar<br>.gz 或 .bz2 的分别加 z 和 j</p>
+<h1 id="VMware"><a href="#VMware" class="headerlink" title="VMware"></a>VMware</h1><h2 id="一些可能用到的操作合集"><a href="#一些可能用到的操作合集" class="headerlink" title="一些可能用到的操作合集"></a>一些可能用到的操作合集</h2><h3 id="清理虚拟磁盘"><a href="#清理虚拟磁盘" class="headerlink" title="清理虚拟磁盘"></a>清理虚拟磁盘</h3><p>在虚拟机：<br>rm -rf ~&#x2F;.cache&#x2F;vmware&#x2F;drag_and_drop &#x2F;&#x2F;清除粘贴缓存<br>dd if&#x3D;&#x2F;dev&#x2F;zero of&#x3D;&#x2F;0bits bs&#x3D;20M<br>rm -f &#x2F;0bits<br>在宿主机：<br>.&#x2F;vmware-vdiskmanager.exe -k F:\virtualPC\myCentOS7\MyCentOS_7.6-cl2.vmdk</p>
+<h3 id="扩展虚拟磁盘"><a href="#扩展虚拟磁盘" class="headerlink" title="扩展虚拟磁盘"></a>扩展虚拟磁盘</h3><p>先在外部扩展<br>进入后可用lsblk、du -h、fdisk -l、lvs等命令查看磁盘状态<br>下载 gparted 分区软件<br>    yum install epel-release<br>    yum install gparted<br>gparted运行</p>
+<ul>
+<li>右键，将空闲区划入sda</li>
+<li>如果区不是直接使用某个sda，需要进入lvm再次分配逻辑卷，相关指令<br>  lvm  进入lvm管理<br>  lvm&gt;lvextend -L +28.8G &#x2F;dev&#x2F;mapper&#x2F;centos-root　扩展逻辑卷容量<br>  lvm&gt;lvreduce -L -8.8G &#x2F;dev&#x2F;mapper&#x2F;centos-root  缩小逻辑卷容量<br>  lvm&gt;pvdisplay　　查看卷容量<br>  lvm&gt;quit　　或ctrl C  退出</li>
+<li>查看大小 lvs</li>
+<li>使系统重新读取大小<br>  xfs_growfs &#x2F;dev&#x2F;mapper&#x2F;centos-root<br>  结束</li>
+</ul>
+<h4 id="关于LVM"><a href="#关于LVM" class="headerlink" title="关于LVM"></a>关于LVM</h4><p>LVM是 Logical Volume Manager(逻辑卷管理)的简写，它是Linux环境下对磁盘分区进行管理的一种机制</p>
+<h5 id="LVM-优点"><a href="#LVM-优点" class="headerlink" title="LVM - 优点:"></a>LVM - 优点:</h5><p>LVM通常用于装备大量磁盘的系统，但它同样适于仅有一、两块硬盘的小系统。</p>
+<h6 id="小系统使用LVM的益处"><a href="#小系统使用LVM的益处" class="headerlink" title="小系统使用LVM的益处:"></a>小系统使用LVM的益处:</h6><p>传统的文件系统是基于分区的，一个文件系统对应一个分区。这种方式比较直观，但不易改变：<br>1.	不同的分区相对独立，无相互联系，各分区空间很易利用不平衡，空间不能充分利用；<br>2.	当一个文件系统／分区已满时，无法对其扩充，只能采用重新分区／建立文件系统，非常麻烦；或把分区中的数据移到另一个更大的分区中；或采用符号连接的方式使用其它分区的空间。<br>3.	如果要把硬盘上的多个分区合并在一起使用，只能采用再分区的方式，这个过程需要数据的备份与恢复。</p>
+<p>当采用LVM时，情况有所不同：<br>1.	硬盘的多个分区由LVM统一为卷组管理，可以方便的加入或移走分区以扩大或减小卷组的可用容量，充分利用硬盘空间；<br>2.	文件系统建立在逻辑卷上，而逻辑卷可根据需要改变大小(在卷组容量范围内)以满足要求；<br>3.	文件系统建立在LVM上，可以跨分区，方便使用；</p>
+<h6 id="大系统使用LVM的益处"><a href="#大系统使用LVM的益处" class="headerlink" title="大系统使用LVM的益处:"></a>大系统使用LVM的益处:</h6><ol>
+<li>   在使用很多硬盘的大系统中，使用LVM主要是方便管理、增加了系统的扩展性。</li>
+<li>   在一个有很多不同容量硬盘的大型系统中，对不同的用户的空间分配是一个技巧性的工作，要在用户需求与实际可用空间中寻求平衡。</li>
+<li>   用户／用户组的空间建立在LVM上，可以随时按要求增大，或根据使用情况对各逻辑卷进行调整。当系统空间不足而加入新的硬盘时，不必把用户的数据从原硬盘迁移到新硬盘，而只须把新的分区加入卷组并扩充逻辑卷即可。同样，使用LVM可以在不停服务的情况下。把用户数据从旧硬盘转移到新硬盘空间中去。</li>
+</ol>
+<h5 id="LVM-中的基本概念"><a href="#LVM-中的基本概念" class="headerlink" title="LVM 中的基本概念"></a>LVM 中的基本概念</h5><ol>
+<li><p>   物理卷—–PV（Physical Volume）<br>物理卷在逻辑卷管理中处于最底层，它可以是实际物理硬盘上的分区，也可以是整个物理硬盘。</p>
+</li>
+<li><p>   卷组——–VG（Volumne Group）<br>卷组建立在物理卷之上，一个卷组中至少要包括一个物理卷，在卷组建立之后可动态添加物理卷到卷组中。一个逻辑卷管理系统工程中可以只有一个卷组，也可以拥有多个卷组。</p>
+</li>
+<li><p>   逻辑卷—–LV（Logical Volume）<br>逻辑卷建立在卷组之上，卷组中的未分配空间可以用于建立新的逻辑卷，逻辑卷建立后可以动态地扩展和缩小空间。系统中的多个逻辑卷要以属于同一个卷组，也可以属于不同的多个卷组。</p>
+</li>
+<li><p>   物理区域–PE（Physical Extent）<br>物理区域是物理卷中可用于分配的最小存储单元，物理区域的大小可根据实际情况在建立物理卷时指定。物理区域大小一旦确定将不能更改，同一卷组中的所有物理卷的物理区域大小需要一致。</p>
+</li>
+<li><p>   逻辑区域―LE（Logical Extent）<br>逻辑区域是逻辑卷中可用于分配的最小存储单元，逻辑区域的大小取决于逻辑卷所在卷组中的物理区域的大小。</p>
+</li>
+<li><p>   卷组描述区域—–（Volume Group Descriptor Area）<br>卷组描述区域存在于每个物理卷中，用于描述物理卷本身、物理卷所属卷组、卷组中的逻辑卷及逻辑卷中物理区域的分配等所有信息，卷组描述区域是在使用pvcreate建立物理卷时建立的。</p>
+</li>
+</ol>
+<h5 id="LVM-常用方法"><a href="#LVM-常用方法" class="headerlink" title="LVM 常用方法"></a>LVM 常用方法</h5><h6 id="1-物理卷命令"><a href="#1-物理卷命令" class="headerlink" title="1. 物理卷命令"></a>1. 物理卷命令</h6><p>一般维护命令：<br>pvscan #在系统的所有磁盘中搜索已存在的物理卷<br>pvdisplay 物理卷全路径名称 #用于显示指定物理卷的属性。<br>pvdata 物理卷全路径名称 #用于显示物理卷的卷组描述区域信息，用于调试目的。<br>pvchange Cx|–allocation {y|n} 物理卷全路径名 #用于改变物理卷的分配许可设置物理卷的创建与删除命令<br>pvcreate 设备全路径名 #用于在磁盘或磁盘分区上创建物理卷初始化信息，以便对该物理卷进行逻辑卷管理。<br>pvmove 源物理卷全路径我[目的物理卷全路径名] #用于把某物理卷中的数据转移到同卷组中其他的特刊卷中。</p>
+<h6 id="2-卷组命令"><a href="#2-卷组命令" class="headerlink" title="2. 卷组命令"></a>2. 卷组命令</h6><p>一般维护命令<br>vgscan #检测系统中所有磁盘<br>vgck [卷组名] #用于检查卷组中卷组描述区域信息的一致性。<br>vgdisplay [卷组名] #显示卷组的属性信息<br>vgrename 原卷组名 新卷组名<br>vgchange -a y|n [卷组名] #改变卷组的相应属性。是否可分配<br>vgchange -l 最大逻辑卷数 #卷组可容纳最大逻辑卷数<br>vgchange -x y|n [卷组名] #卷是否有效<br>vgmknodes [卷组名|卷组路径] #用于建立（重新建立）已有卷组目录和其中的设备文件卷组配置的备份与恢复命令<br>vgcfgbackup [卷组名] #把卷组中的VGDA信息备份到“&#x2F;etc&#x2F;lvmconf”目录中的文件<br>vgcfgrestore -n 卷组名 物理卷全路命名 #从备份文件中必得指定物理卷的信息卷组的建立与删除命令<br>vgcreate 卷组名 物理卷全路径名[物理卷全路径名]<br>vgmove 卷组名</p>
+<p>卷组的扩充与缩小命令<br>vgextend 卷组名 物理卷全路径名[物理卷全路径名]<br>vgreduce 卷组名 物理卷全路径名[物理卷全路径名]</p>
+<p>卷组的合并与拆分<br>vgmerge 目的卷组名 源卷组名 #合并两个已经存在的卷组，要求两个卷组的物理区域大小相等且源卷组是非活动的。<br>vgsplit 现有卷组 新卷组 物理卷全路径名[物理卷全路径名]</p>
+<p>卷组的输入与输出命令<br>vgexport 卷组名<br>vgimport 卷组名 卷组中的物理卷[卷组中的物理卷]</p>
+<h6 id="3-逻辑卷命令"><a href="#3-逻辑卷命令" class="headerlink" title="3. 逻辑卷命令"></a>3. 逻辑卷命令</h6><p>一般命令<br>lvscan<br>lvdisplay 逻辑卷全路径名[逻辑卷全路径名]<br>lvrename 旧逻辑卷全路径名 新逻辑卷全路径名<br>lvrename 卷组名 旧逻辑卷名 新逻辑卷名<br>lvchange<br>e2fsadm -L +|- 逻辑卷增减量 逻辑卷全路径名</p>
+<p>逻辑卷的创建与删除命令<br>lvcreate<br>lvremove</p>
+<p>逻辑卷的扩充与缩小命令<br>lvextend -L +逻辑卷大小增量 逻辑卷全路径名<br>lvextend -L -逻辑卷减小量 逻辑卷全路径名</p>
+<h6 id="4-逻辑卷管理命令"><a href="#4-逻辑卷管理命令" class="headerlink" title="4. 逻辑卷管理命令"></a>4. 逻辑卷管理命令</h6><p>lvmdiskscan #检测所有的SCSI、IDE等存储设备<br>lvmchange -R|–reset #复位逻辑卷管理器<br>lvmsadc [日志文件全路径名] #收信逻辑卷管理器读写统计信息，保存到日志文件中。<br>lvmsar 日志文件全路径名 #从lvmsadc命令生成的日志文件中读取并报告逻辑卷管理器的读写统计信息。</p>
+]]></content>
+      <categories>
+        <category>Computer</category>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Linux</tag>
+        <tag>Virtual PC</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Dead Ends and Detours</title>
+    <url>/2023/03/16/deadend/</url>
+    <content><![CDATA[<p>读了 <em>More Dead Ends and Detours: En Route to Successful Total Synthesis</em>, 本篇算是一点笔记。。</p>
+<h1 id="杂论"><a href="#杂论" class="headerlink" title="杂论"></a>杂论</h1><h2 id="Foreword"><a href="#Foreword" class="headerlink" title="Foreword"></a>Foreword</h2><p>写的太棒了。</p>
+<blockquote>
+<p>Not just Don Quixote, but we also live by our stories; narrative is the human condition.</p>
+</blockquote>
+<blockquote>
+<p>We, the hunters of molecules, builders of astounding structures, are not as different from our ancestors as we imagine. True, in much of what we do, our proclivity to tell stories may have been beaten out of us. ‘‘That’s not science,<br>can’t you convert it into a mathematical expression?’’ Yet storytelling, plain and scientific, is natural. And in synthetic organic chemistry, it is innate.</p>
+</blockquote>
+<blockquote>
+<p>the making of molecules is a very geometrical and descriptive undertaking</p>
+</blockquote>
+<blockquote>
+<p>Note incidentally the simple, unidirectional arrows, the arrows of Paul Klee; chemists well aware of ubiquitous equilibrium, nevertheless desire a product. <strong>They know how to perturb any equilibrium</strong> so they get what they want.</p>
+</blockquote>
+<blockquote>
+<p>Nowhere else in the world of stories or science is there such a repeated, direct emphasis on the path taken, the journey, as in synthetic organic chemistry.</p>
+</blockquote>
+<blockquote>
+<p>The way is difficult; were it not so, others would have surely trodden it earlier. </p>
+</blockquote>
+<blockquote>
+<p>Atoms too, like human beings, sometimes refuse to cooperate.</p>
+</blockquote>
+<blockquote>
+<p>***The universe is made of stories, ***<br><em><strong>not of atoms.</strong></em><br><em>The universe is made of stories, not of atoms.</em></p>
+</blockquote>
+<blockquote>
+<p>And it is the nature of journeys, all journeys, that wrong turns will be made, even by the cleverest of researchers.<br>Not everything is foreseen.</p>
+</blockquote>
+<blockquote>
+<p>Mind you, no one will tell a synthetic tale with 10 detours. You would begin to doubt the intelligence of the designer, and in a profession where reason and design have been deified, that won’t do. But a couple of sheer cliffs climbed is good for the story. Overcoming the obstacles adds to the image one wants to convey, of the one whose mind was flexible, prepared to recognize chance.</p>
+</blockquote>
+<blockquote>
+<p><em>Que quando una puerta se cierra otra suele abrir la fortuna.</em></p>
+</blockquote>
+<blockquote>
+<p>Failings are human, but they are overridden by what makes us optimistic about humanity, the great truth of human creation. Especially the improvization that follows confrontation with adversity.</p>
+</blockquote>
+<blockquote>
+<p>In surmounting obstacles, the organic chemist is a superb creator. ‘‘We shall overcome.’’ And we do, wonderfully crafting, no hype needed, the most beautiful stories of our time.</p>
+</blockquote>
+<h2 id="1-Introduction"><a href="#1-Introduction" class="headerlink" title="1 Introduction"></a>1 Introduction</h2><blockquote>
+<p>Paralleling the synthesis of a complex natural product or a complex synthetic molecule with a good planned battle, we should remember that in the words of German military strategist Helmuth von Moltke ‘No battle plan survives contact with the enemy.’</p>
+</blockquote>
+<blockquote>
+<p><strong>Mistaken suppositions come back to bite you and the most brilliant plan may fail by the failure of a simple, seemingly innocuous, step.</strong></p>
+</blockquote>
+<blockquote>
+<p>A first-class theory predicts; a second-rate theory forbids; and a third-class theory explains after the event.</p>
+</blockquote>
+<h3 id="Section-1-1"><a href="#Section-1-1" class="headerlink" title="Section 1.1"></a>Section 1.1</h3><blockquote>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+</blockquote>
+]]></content>
+      <categories>
+        <category>Chemistry</category>
+        <category>Organic Chemistry</category>
+        <category>Total Synthesis</category>
+      </categories>
+      <tags>
+        <tag>Organic Chemistry</tag>
+        <tag>Synthesis</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hello World</title>
     <url>/2023/02/04/hello-world/</url>
     <content><![CDATA[<span id="more"></span>
@@ -12,48 +293,6 @@
       </categories>
       <tags>
         <tag>data</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>翻译了Levine的量子化学...[附第一章下载链接]</title>
-    <url>/2023/02/07/levine1/</url>
-    <content><![CDATA[<p><del>第一章其实在一月二十多号就翻译完了。。但当时还没有这个博客，图一乐www</del></p>
-<p>正如上一篇所言，处理第一章的前半部分只是为了自用，所以只求了逻辑通顺，其他方面并不优美，各位包含着瞧，原谅着看，欢迎多提建议~</p>
-<p>翻译初校版<a href="https://voidmio.xyz/resources/Chem/QC/LQC1-zh.pdf">下载链接</a></p>
-<table><tr><td bgcolor=#e6dcd5>读者：“你自己校了吗？”</td></tr></table>
-<table><tr><td bgcolor=#dcd5e6>澪：“校了一部分。”</td></tr></table>
-<table><tr><td bgcolor=#e6dcd5>读者：“感觉怎么样？”</td></tr></table>
-<table><tr><td bgcolor=#dcd5e6>澪：“我改正了大部分不自然的句子”<br/>
-“但是我保留了一部分”<br/>
-“我觉得保留一部分不自然的地方”<br/>
-“才知道你看的是翻译。”</td></tr></table>
-<table><tr><td bgcolor=#e6dcd5>读者：“你是有意把它保留的吗？”</td></tr></table>
-<table><tr><td bgcolor=#dcd5e6>澪：“是自校的过程中，我留下了一部分。”</td></tr></table>
-<table><tr><td bgcolor=#e6dcd5>读者：“是故意的还是不小心的？”</td></tr></table>
-<table><tr><td bgcolor=#dcd5e6>澪：“是故意的。”</td></tr></table>
-
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
-<!-- ![读者脸](https://imgs.qiubiaoqing.com/qiubiaoqing/imgs/63d4abe70c3ackzs.gif) -->
-<p><img src="/images/postimg/levine/readerface.jpg" alt="读者脸"></p>
-<p>原书及所有翻译产出均可在我的主页中<a href="https://voidmio.xyz/resources/">资源</a>处下载。</p>
-]]></content>
-      <categories>
-        <category>Chemistry</category>
-        <category>Quantum Chemistry</category>
-        <category>Levine Quantum Chemistry</category>
-      </categories>
-      <tags>
-        <tag>Quantum Chemistry</tag>
-        <tag>Levine</tag>
       </tags>
   </entry>
   <entry>
@@ -99,6 +338,48 @@
 <p>翻译初校版<a href="https://voidmio.xyz/resources/Chem/QC/LQC2-zh.pdf">下载链接</a></p>
 <p><del>本来想着再校对一下，看了两页头昏眼花，老了老了</del></p>
 <p><del>另外这章字体似乎比第一章小点，俺也不知道为啥啊救命</del></p>
+<p>原书及所有翻译产出均可在我的主页中<a href="https://voidmio.xyz/resources/">资源</a>处下载。</p>
+]]></content>
+      <categories>
+        <category>Chemistry</category>
+        <category>Quantum Chemistry</category>
+        <category>Levine Quantum Chemistry</category>
+      </categories>
+      <tags>
+        <tag>Quantum Chemistry</tag>
+        <tag>Levine</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>翻译了Levine的量子化学...[附第一章下载链接]</title>
+    <url>/2023/02/07/levine1/</url>
+    <content><![CDATA[<p><del>第一章其实在一月二十多号就翻译完了。。但当时还没有这个博客，图一乐www</del></p>
+<p>正如上一篇所言，处理第一章的前半部分只是为了自用，所以只求了逻辑通顺，其他方面并不优美，各位包含着瞧，原谅着看，欢迎多提建议~</p>
+<p>翻译初校版<a href="https://voidmio.xyz/resources/Chem/QC/LQC1-zh.pdf">下载链接</a></p>
+<table><tr><td bgcolor=#e6dcd5>读者：“你自己校了吗？”</td></tr></table>
+<table><tr><td bgcolor=#dcd5e6>澪：“校了一部分。”</td></tr></table>
+<table><tr><td bgcolor=#e6dcd5>读者：“感觉怎么样？”</td></tr></table>
+<table><tr><td bgcolor=#dcd5e6>澪：“我改正了大部分不自然的句子”<br/>
+“但是我保留了一部分”<br/>
+“我觉得保留一部分不自然的地方”<br/>
+“才知道你看的是翻译。”</td></tr></table>
+<table><tr><td bgcolor=#e6dcd5>读者：“你是有意把它保留的吗？”</td></tr></table>
+<table><tr><td bgcolor=#dcd5e6>澪：“是自校的过程中，我留下了一部分。”</td></tr></table>
+<table><tr><td bgcolor=#e6dcd5>读者：“是故意的还是不小心的？”</td></tr></table>
+<table><tr><td bgcolor=#dcd5e6>澪：“是故意的。”</td></tr></table>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+<!-- ![读者脸](https://imgs.qiubiaoqing.com/qiubiaoqing/imgs/63d4abe70c3ackzs.gif) -->
+<p><img src="/images/postimg/levine/readerface.jpg" alt="读者脸"></p>
 <p>原书及所有翻译产出均可在我的主页中<a href="https://voidmio.xyz/resources/">资源</a>处下载。</p>
 ]]></content>
       <categories>
@@ -498,7 +779,23 @@ $$
 <h4 id="3"><a href="#3" class="headerlink" title="3"></a>3</h4><p>环烯丙基阳离子的开环只涉及一对共轭电子，数量为 2 (4n+2，n&#x3D;0)。在加热条件下，这将通过同面的 Hückel 芳香过渡态，两侧基团向相反方向向外旋转（对旋），并在此过程中保持对称面。<br><img src="/images/postimg/pericyclic/cation1.png"></p>
 <div class="group-picture"><div class="group-picture-row"><div class="group-picture-column"><img src="/images/postimg/pericyclic/cation1i.gif" alt="Ring opening"></div><div class="group-picture-column"><img src="/images/postimg/pericyclic/cation1.gif" alt="Ring closing"></div></div><div class="group-picture-row"></div></div>
 <p>注意在过渡态中，离去基团的解离过程和电环化开环不是彼此独立的，这两者共同构成了一个单一的协同过程，形式为溶剂辅助的周环反应机理。</p>
-<h5 id="4"><a href="#4" class="headerlink" title="4"></a>4</h5><p>在涉及杂原子的情况下，孤立的原子对算作两个电子。因此，氮杂环丙烷的开环是一个具有一个反表面组分的 4 电子过程 (&#x3D;4N)，通过 Möbius 芳香过渡态进行，两个甲基在相同的方向上旋转（顺旋），近似保持对称轴。</p>
+<h5 id="4"><a href="#4" class="headerlink" title="4"></a>4</h5><p>在涉及杂原子的情况下，孤立的原子对算作两个电子。因此，氮杂环丙烷的开环是一个具有一个反面的 4 电子过程 (&#x3D;4N)，通过 Möbius 芳香过渡态进行，两个甲基在相同的方向上旋转（顺旋），近似保持轴对称。<br><img src="/images/postimg/pericyclic/azir.png"><br><img src="/images/postimg/pericyclic/azir.gif"></p>
+<h5 id="5"><a href="#5" class="headerlink" title="5"></a>5</h5><p>在 1961 年 Havinga 和 Schlatmann 对类固醇的<a href="http://dx.doi.org/10.1002/anie.196708701">研究</a>中即观察到了六电子电环化的实例。1963 年，Corey 在二氢木香烃内酯的合成过程中得到了一个明确而清晰的周环反应立体选择性的<a href="http://dx.doi.org/10.1021/ja00952a037">例子</a>，但都没有继续推进得出一个一般性的结论。<br><img src="/images/postimg/pericyclic/HS.png"><br><img src="/images/postimg/pericyclic/corey1.png"></p>
+<h5 id="6"><a href="#6" class="headerlink" title="6"></a>6</h5><p>计算电子数时的一个重点是只包括环共轭体系。在这个<a href="http://dx.doi.org/10.1002/anie.196708701">例子</a>中，对于[16]轮烯的一个价键异构体(具有 Cs 点群（即对称面），因此至少形式上是具有 4N 电子的 Hückel 反芳香性体系)，其可发生两个独立的六电子 (4N+2) 电环化反应，并且中心双键中的电子不被计算在内，因为它们只是“旁观者”，因此 16 个电子中的 4 个不参与反应 (否则将是禁阻的 π4s+π4s 反应)。两个外环为 4N+2 Hückel 芳香族过渡态，中环为 4N 电子反芳香族旁观者。事实上，如果两个电环反应是分步进行的而非同时发生的，中心环上的 Hückel 反芳香性也可以避免，这就是实际发生的情况。<br><img src="/images/postimg/pericyclic/annulene.png"><br>如果[16]环烯被绘制为不同的价键异构体，它可以拥有不同的构象，因为中心 C&#x3D;C 键变为 C-C 键，其可以在室温下围绕该键发生旋转。这种新构象具有 C2 对称轴而非对称面，环化的过渡态具有 4n 电子，即 π4a+π4s 的 Möbius 芳香过渡态，中心有一个异面部分。这一次，二烯及其每侧的 8 个电子成为了“旁观者”（否则会构成两个禁阻的 4n+2 电子电环化过渡态）。反应中中心环为 4n 电子 Möbius 芳香过渡态，两个外环为 4n+2 电子 Möbius 反芳香过渡态。它比之前的 Hückel 模式过渡态能量高 14.8 kcal&#x2F;mol，部分原因是该路径有两个反芳香环。</p>
+<table>
+<thead>
+<tr>
+<th align="center">4n+2 Hückel: Plane of symmetry</th>
+<th align="center">4n Möbius: Axis of symmetry</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center"><img src="/images/postimg/pericyclic/16Cs.gif"></td>
+<td align="center"><img src="/images/postimg/pericyclic/16.gif"></td>
+</tr>
+</tbody></table>
+<h5 id="7"><a href="#7" class="headerlink" title="7"></a>7</h5><p>碳负离子提供 2e 的同面电环化<br><img src="/images/postimg/pericyclic/anion.png"><br><img src="/images/postimg/pericyclic/anion.gif"></p>
+<h5 id="8"><a href="#8" class="headerlink" title="8"></a>8</h5><p>最后，想一想下面的电开环是通过 Hückel 还是 Möbius 过渡态发生的？</p>
 <p><img src="/images/postimg/pericyclic/ene1.gif"><br><img src="/images/postimg/pericyclic/ene2.gif"><br><img src="/images/postimg/pericyclic/p19.png"><br><img src="/images/postimg/pericyclic/p19.png"><br><img src="/images/postimg/pericyclic/p19.png"></p>
 ]]></content>
       <categories>
@@ -509,196 +806,6 @@ $$
       <tags>
         <tag>Organic Chemistry</tag>
         <tag>Pericyclic</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>关于 Linux 操作的一些事情</title>
-    <url>/2023/03/03/aboutLinux/</url>
-    <content><![CDATA[<p>昂。写这章的目的其实不在于自己看，更多是为了再有人问我什么东西怎么操作时我可以直接甩链接（（（</p>
-<p>另，本文没什么专业性，多是用大白话描述某个命令最简单的用途，以及达到某个目的可以采用最直接的方法。<del>这不过是一个化学人为了自己的一厢情愿，所能付出的一切罢了。</del>但如有什么重大错误还请指正w</p>
-<p>本人使用的平台：CentOS 7.6。其实现在更建议使用 RockyLinux，但至少 RockyLinux 9 不是很喜欢我的电脑，各种卡。二者基本操作区别不大，自己看着装吧。CentOS 历史发行版均可在<a href="https://wiki.centos.org/Download">官网</a>下载 DVD 镜像。</p>
-<p><del>Ubuntu 别来问我 Ubuntu 别来问我 Ubuntu 别来问我 Ubuntu 别来问我 Ubuntu 别来问我</del></p>
-<p>大部分是用虚拟机运行的，大概还要加入一部分 VMware 的操作。听说 <a href="https://multipass.run/">Multipass</a> 也挺好的，有时间去折腾折腾。</p>
-<p>其实随便搁哪好好研究两天就会比我的水平高得多，这些完全是给<del>我这样的</del>没啥专业研究需求的小白写的。</p>
-<p>就这样吧。。接下来是正文</p>
-<h1 id="Linux"><a href="#Linux" class="headerlink" title="Linux"></a>Linux</h1><h2 id="常识"><a href="#常识" class="headerlink" title="常识"></a>常识</h2><p><del>别问为什么写，问就是真有人不知道，我靠。。。</del></p>
-<h3 id="Terminal-操作"><a href="#Terminal-操作" class="headerlink" title="Terminal 操作"></a>Terminal 操作</h3><p>tab 自动补全文件名或目录名称；<br>俩 tab 输出当前目录中可能的名称。<br>&gt; 重定向，比如把终端输出内容输出到某文件。<br>| 管道，将 | 前命令输出作为 | 后命令的输入处理。</p>
-<h3 id="目录"><a href="#目录" class="headerlink" title="目录"></a>目录</h3><p>根目录 &#x2F; ；<br>当前目录 . ；上级目录 .. ；<br>相对路径绝对路径自己整明白。</p>
-<h3 id="通配符"><a href="#通配符" class="headerlink" title="通配符"></a>通配符</h3><table>
-<thead>
-<tr>
-<th align="center">通配符</th>
-<th align="center">作用</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">*</td>
-<td align="center">代表任意数量的任意字符</td>
-</tr>
-<tr>
-<td align="center">？</td>
-<td align="center">代表任意<strong>一个</strong>字符</td>
-</tr>
-<tr>
-<td align="center">[12345]</td>
-<td align="center">代表 1&#x2F;2&#x2F;3&#x2F;4&#x2F;5 中的任意一个</td>
-</tr>
-<tr>
-<td align="center">[m-s]</td>
-<td align="center">代表 m~s 中的任意一个</td>
-</tr>
-<tr>
-<td align="center">…</td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><p>command  –help 或 man command：查看命令帮助</p>
-<h3 id="权限设置"><a href="#权限设置" class="headerlink" title="权限设置"></a>权限设置</h3><p>groupadd groupname: 添加用户组。</p>
-<p>gpasswd [-a username] groupname 添加用户组密码。</p>
-<ul>
-<li>-a: 把用户加入该组</li>
-<li>-d: 把用户从该组删除</li>
-<li>grep groupname &#x2F;etc&#x2F;group: 查看用户组信息。</li>
-</ul>
-<p>chgrp [-R] destinationgroup filename: 改变文件(文件夹)所属用户组</p>
-<p>chown [-R] destinationuser filename: 改变文件(文件夹)所属用户</p>
-<p>chmod 设置权限 r&#x3D;1，w&#x3D;2，x&#x3D;4</p>
-<ul>
-<li>-R 同时递归设置文件夹下所有子文件和文件夹（chmod 750 .&#x2F;* -R）</li>
-</ul>
-<h3 id="文件操作-等"><a href="#文件操作-等" class="headerlink" title="文件操作 等"></a>文件操作 等</h3><p>pwd: 输出当前工作目录 print wrok directory</p>
-<p>ls: 查看当前文件夹下内容，可使用通配符。</p>
-<ul>
-<li>-a: 显示隐藏</li>
-<li>-l: 长型输出 同 ll；加 -h 使文件大小美观（human-readable output）</li>
-<li>-R: 递归输出</li>
-<li>-d: 只输出文件夹</li>
-</ul>
-<p>tree: 以树状图输出当前目录下文件结构，可 yum install tree 下载，不下也无所谓。</p>
-<ul>
-<li>ls 的基本都能用，其他 –help 自己看看</li>
-</ul>
-<p>cd: 打开文件夹 change dir</p>
-<p>touch: 新建文件</p>
-<p>mkdir: 新建文件夹</p>
-<ul>
-<li>-p: 递归创建</li>
-</ul>
-<p>rm: 删除</p>
-<ul>
-<li>-r: 递归删除目录</li>
-<li>-f: 强制删除</li>
-</ul>
-<p>cp: 复制。<code>cp [源文件地址] [目标文件地址]</code></p>
-<ul>
-<li>-r: 递归复制，可复制目录</li>
-<li>-i: 覆盖提示</li>
-</ul>
-<p>mv: 移动。和 cp 差不多。可用于某文件重命名。</p>
-<h3 id="文件内容操作-等"><a href="#文件内容操作-等" class="headerlink" title="文件内容操作 等"></a>文件内容操作 等</h3><p>grep: 文本搜索。<code>grep [目标字符串] [处理的文件名]</code> </p>
-<ul>
-<li>-n: 显示行号<br>关于目标匹配的设定–正则表达都可以用</li>
-<li>^sth: 要求 sth 出现在行首</li>
-<li>sth$: 要求 sth 出现在行尾</li>
-</ul>
-<p>echo: 输出。默认输出在终端。</p>
-<ul>
-<li>echo sth &gt; ww.txt 将 sth 写入 ww 文件</li>
-<li>echo sth &gt;&gt; ww.txt 将 sth 追加写入 ww 文件尾</li>
-</ul>
-<h3 id="查看硬件-等"><a href="#查看硬件-等" class="headerlink" title="查看硬件 等"></a>查看硬件 等</h3><p>ifconfig 查看 ip 等网卡信息<br>ping 检测连接</p>
-<p>free 查看内存</p>
-<ul>
-<li>-b, -k, -m, -g: 单位</li>
-<li>-h, –human         show human-readable output</li>
-<li>-t, –total         show total for RAM + swap</li>
-</ul>
-<p>du</p>
-<ul>
-<li>du -h –max-depth&#x3D;n：查看 n 层目录下的文件、文件夹大小</li>
-</ul>
-<p>lsblk 查看 sda 分区</p>
-<p>压缩和解压</p>
-<table>
-<thead>
-<tr>
-<th align="center">A</th>
-<th align="center">B</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">-c 建立压缩档案</td>
-<td align="center">-z gzip</td>
-</tr>
-<tr>
-<td align="center">-x 解压缩</td>
-<td align="center">-j bz2</td>
-</tr>
-<tr>
-<td align="center">-t 查看内容</td>
-<td align="center">-Z compress</td>
-</tr>
-<tr>
-<td align="center">-r 向包中追加文件</td>
-<td align="center">-v 显示过程</td>
-</tr>
-<tr>
-<td align="center">-u 更新包中文件</td>
-<td align="center">-O 将文件解开到标准输出</td>
-</tr>
-<tr>
-<td align="center">-f 一般必须加，使用档案名</td>
-<td align="center"></td>
-</tr>
-</tbody></table>
-<p>常用的：<br>-c：压缩，如tar -cvf jpg.tar *.jpg<br>-x：解压，如tar -xvf jpg.tar<br>.gz 或 .bz2 的分别加 z 和 j</p>
-<h1 id="VMware"><a href="#VMware" class="headerlink" title="VMware"></a>VMware</h1><h2 id="一些可能用到的操作合集"><a href="#一些可能用到的操作合集" class="headerlink" title="一些可能用到的操作合集"></a>一些可能用到的操作合集</h2><h3 id="扩展虚拟磁盘"><a href="#扩展虚拟磁盘" class="headerlink" title="扩展虚拟磁盘"></a>扩展虚拟磁盘</h3><p>先在外部扩展<br>进入后可用lsblk、du -h、fdisk -l、lvs等命令查看磁盘状态<br>下载 gparted 分区软件<br>    yum install epel-release<br>    yum install gparted<br>gparted运行</p>
-<ul>
-<li>右键，将空闲区划入sda</li>
-<li>如果区不是直接使用某个sda，需要进入lvm再次分配逻辑卷，相关指令<br>  lvm  进入lvm管理<br>  lvm&gt;lvextend -L +28.8G &#x2F;dev&#x2F;mapper&#x2F;centos-root　扩展逻辑卷容量<br>  lvm&gt;lvreduce -L -8.8G &#x2F;dev&#x2F;mapper&#x2F;centos-root  缩小逻辑卷容量<br>  lvm&gt;pvdisplay　　查看卷容量<br>  lvm&gt;quit　　或ctrl C  退出</li>
-<li>查看大小 lvs</li>
-<li>使系统重新读取大小<br>  xfs_growfs &#x2F;dev&#x2F;mapper&#x2F;centos-root<br>  结束</li>
-</ul>
-<h4 id="关于LVM"><a href="#关于LVM" class="headerlink" title="关于LVM"></a>关于LVM</h4><p>LVM是 Logical Volume Manager(逻辑卷管理)的简写，它是Linux环境下对磁盘分区进行管理的一种机制</p>
-<h5 id="LVM-优点"><a href="#LVM-优点" class="headerlink" title="LVM - 优点:"></a>LVM - 优点:</h5><p>LVM通常用于装备大量磁盘的系统，但它同样适于仅有一、两块硬盘的小系统。</p>
-<h6 id="小系统使用LVM的益处"><a href="#小系统使用LVM的益处" class="headerlink" title="小系统使用LVM的益处:"></a>小系统使用LVM的益处:</h6><p>传统的文件系统是基于分区的，一个文件系统对应一个分区。这种方式比较直观，但不易改变：<br>1.	不同的分区相对独立，无相互联系，各分区空间很易利用不平衡，空间不能充分利用；<br>2.	当一个文件系统／分区已满时，无法对其扩充，只能采用重新分区／建立文件系统，非常麻烦；或把分区中的数据移到另一个更大的分区中；或采用符号连接的方式使用其它分区的空间。<br>3.	如果要把硬盘上的多个分区合并在一起使用，只能采用再分区的方式，这个过程需要数据的备份与恢复。</p>
-<p>当采用LVM时，情况有所不同：<br>1.	硬盘的多个分区由LVM统一为卷组管理，可以方便的加入或移走分区以扩大或减小卷组的可用容量，充分利用硬盘空间；<br>2.	文件系统建立在逻辑卷上，而逻辑卷可根据需要改变大小(在卷组容量范围内)以满足要求；<br>3.	文件系统建立在LVM上，可以跨分区，方便使用；</p>
-<h6 id="大系统使用LVM的益处"><a href="#大系统使用LVM的益处" class="headerlink" title="大系统使用LVM的益处:"></a>大系统使用LVM的益处:</h6><ol>
-<li>   在使用很多硬盘的大系统中，使用LVM主要是方便管理、增加了系统的扩展性。</li>
-<li>   在一个有很多不同容量硬盘的大型系统中，对不同的用户的空间分配是一个技巧性的工作，要在用户需求与实际可用空间中寻求平衡。</li>
-<li>   用户／用户组的空间建立在LVM上，可以随时按要求增大，或根据使用情况对各逻辑卷进行调整。当系统空间不足而加入新的硬盘时，不必把用户的数据从原硬盘迁移到新硬盘，而只须把新的分区加入卷组并扩充逻辑卷即可。同样，使用LVM可以在不停服务的情况下。把用户数据从旧硬盘转移到新硬盘空间中去。</li>
-</ol>
-<h5 id="LVM-中的基本概念"><a href="#LVM-中的基本概念" class="headerlink" title="LVM 中的基本概念"></a>LVM 中的基本概念</h5><ol>
-<li><p>   物理卷—–PV（Physical Volume）<br>物理卷在逻辑卷管理中处于最底层，它可以是实际物理硬盘上的分区，也可以是整个物理硬盘。</p>
-</li>
-<li><p>   卷组——–VG（Volumne Group）<br>卷组建立在物理卷之上，一个卷组中至少要包括一个物理卷，在卷组建立之后可动态添加物理卷到卷组中。一个逻辑卷管理系统工程中可以只有一个卷组，也可以拥有多个卷组。</p>
-</li>
-<li><p>   逻辑卷—–LV（Logical Volume）<br>逻辑卷建立在卷组之上，卷组中的未分配空间可以用于建立新的逻辑卷，逻辑卷建立后可以动态地扩展和缩小空间。系统中的多个逻辑卷要以属于同一个卷组，也可以属于不同的多个卷组。</p>
-</li>
-<li><p>   物理区域–PE（Physical Extent）<br>物理区域是物理卷中可用于分配的最小存储单元，物理区域的大小可根据实际情况在建立物理卷时指定。物理区域大小一旦确定将不能更改，同一卷组中的所有物理卷的物理区域大小需要一致。</p>
-</li>
-<li><p>   逻辑区域―LE（Logical Extent）<br>逻辑区域是逻辑卷中可用于分配的最小存储单元，逻辑区域的大小取决于逻辑卷所在卷组中的物理区域的大小。</p>
-</li>
-<li><p>   卷组描述区域—–（Volume Group Descriptor Area）<br>卷组描述区域存在于每个物理卷中，用于描述物理卷本身、物理卷所属卷组、卷组中的逻辑卷及逻辑卷中物理区域的分配等所有信息，卷组描述区域是在使用pvcreate建立物理卷时建立的。</p>
-</li>
-</ol>
-<h5 id="LVM-常用方法"><a href="#LVM-常用方法" class="headerlink" title="LVM 常用方法"></a>LVM 常用方法</h5><h6 id="1-物理卷命令"><a href="#1-物理卷命令" class="headerlink" title="1. 物理卷命令"></a>1. 物理卷命令</h6><p>一般维护命令：<br>pvscan #在系统的所有磁盘中搜索已存在的物理卷<br>pvdisplay 物理卷全路径名称 #用于显示指定物理卷的属性。<br>pvdata 物理卷全路径名称 #用于显示物理卷的卷组描述区域信息，用于调试目的。<br>pvchange Cx|–allocation {y|n} 物理卷全路径名 #用于改变物理卷的分配许可设置物理卷的创建与删除命令<br>pvcreate 设备全路径名 #用于在磁盘或磁盘分区上创建物理卷初始化信息，以便对该物理卷进行逻辑卷管理。<br>pvmove 源物理卷全路径我[目的物理卷全路径名] #用于把某物理卷中的数据转移到同卷组中其他的特刊卷中。</p>
-<h6 id="2-卷组命令"><a href="#2-卷组命令" class="headerlink" title="2. 卷组命令"></a>2. 卷组命令</h6><p>一般维护命令<br>vgscan #检测系统中所有磁盘<br>vgck [卷组名] #用于检查卷组中卷组描述区域信息的一致性。<br>vgdisplay [卷组名] #显示卷组的属性信息<br>vgrename 原卷组名 新卷组名<br>vgchange -a y|n [卷组名] #改变卷组的相应属性。是否可分配<br>vgchange -l 最大逻辑卷数 #卷组可容纳最大逻辑卷数<br>vgchange -x y|n [卷组名] #卷是否有效<br>vgmknodes [卷组名|卷组路径] #用于建立（重新建立）已有卷组目录和其中的设备文件卷组配置的备份与恢复命令<br>vgcfgbackup [卷组名] #把卷组中的VGDA信息备份到“&#x2F;etc&#x2F;lvmconf”目录中的文件<br>vgcfgrestore -n 卷组名 物理卷全路命名 #从备份文件中必得指定物理卷的信息卷组的建立与删除命令<br>vgcreate 卷组名 物理卷全路径名[物理卷全路径名]<br>vgmove 卷组名</p>
-<p>卷组的扩充与缩小命令<br>vgextend 卷组名 物理卷全路径名[物理卷全路径名]<br>vgreduce 卷组名 物理卷全路径名[物理卷全路径名]</p>
-<p>卷组的合并与拆分<br>vgmerge 目的卷组名 源卷组名 #合并两个已经存在的卷组，要求两个卷组的物理区域大小相等且源卷组是非活动的。<br>vgsplit 现有卷组 新卷组 物理卷全路径名[物理卷全路径名]</p>
-<p>卷组的输入与输出命令<br>vgexport 卷组名<br>vgimport 卷组名 卷组中的物理卷[卷组中的物理卷]</p>
-<h6 id="3-逻辑卷命令"><a href="#3-逻辑卷命令" class="headerlink" title="3. 逻辑卷命令"></a>3. 逻辑卷命令</h6><p>一般命令<br>lvscan<br>lvdisplay 逻辑卷全路径名[逻辑卷全路径名]<br>lvrename 旧逻辑卷全路径名 新逻辑卷全路径名<br>lvrename 卷组名 旧逻辑卷名 新逻辑卷名<br>lvchange<br>e2fsadm -L +|- 逻辑卷增减量 逻辑卷全路径名</p>
-<p>逻辑卷的创建与删除命令<br>lvcreate<br>lvremove</p>
-<p>逻辑卷的扩充与缩小命令<br>lvextend -L +逻辑卷大小增量 逻辑卷全路径名<br>lvextend -L -逻辑卷减小量 逻辑卷全路径名</p>
-<h6 id="4-逻辑卷管理命令"><a href="#4-逻辑卷管理命令" class="headerlink" title="4. 逻辑卷管理命令"></a>4. 逻辑卷管理命令</h6><p>lvmdiskscan #检测所有的SCSI、IDE等存储设备<br>lvmchange -R|–reset #复位逻辑卷管理器<br>lvmsadc [日志文件全路径名] #收信逻辑卷管理器读写统计信息，保存到日志文件中。<br>lvmsar 日志文件全路径名 #从lvmsadc命令生成的日志文件中读取并报告逻辑卷管理器的读写统计信息。</p>
-]]></content>
-      <categories>
-        <category>Computer</category>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Linux</tag>
-        <tag>Virtual PC</tag>
       </tags>
   </entry>
 </search>
